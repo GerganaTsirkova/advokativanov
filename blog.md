@@ -2,5 +2,5 @@
 layout: blog
 title: Blog
 type: image
-permalink: /blog/
+permalink: lawyer's-website/blog/
 ---

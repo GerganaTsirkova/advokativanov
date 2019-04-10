@@ -1,7 +1,7 @@
 ---
 layout: page-unmain
 title: Contacts
-permalink: /contacts/
+permalink: lawyer's-website/contacts/
 ---
 
 {% include contacts.html %}

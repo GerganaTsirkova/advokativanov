@@ -1,7 +1,7 @@
 ---
 layout: page-unmain
 title: Services
-permalink: /services/service-tax-law/
+permalink: lawyer's-website/services/service-tax-law/
 ---
 
 {% include service-tax-law.html %}

@@ -1,7 +1,7 @@
 ---
 layout: page-unmain
 title: Prices
-permalink: /prices/
+permalink: lawyer's-website/prices/
 ---
 
 {% include prices.html %}
