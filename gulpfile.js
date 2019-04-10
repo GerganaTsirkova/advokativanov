@@ -1,5 +1,3 @@
-"use strict";
-
 let gulp = require("gulp"),
     autoprefixer = require("gulp-autoprefixer"),
     exec = require("gulp-exec"),
