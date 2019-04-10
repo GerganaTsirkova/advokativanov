@@ -1,7 +1,7 @@
 ---
 layout: page-unmain
 title: Subscribe
-permalink: lawyer's-website/subscribe/
+permalink: /subscribe/
 ---
 
 {% include subscribe.html %}

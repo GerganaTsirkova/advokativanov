@@ -1,7 +1,7 @@
 ---
 layout: page-unmain
 title: Services
-permalink: lawyer's-website/services/
+permalink: /services/
 ---
 
 {% include services.html %}
