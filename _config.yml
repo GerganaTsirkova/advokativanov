@@ -3,8 +3,8 @@ title: Lawyer Svetlomir Ivanov
 email: g_cirkova@mail.bg
 description: My first website after kdankov classes!
 destination: docs
-baseurl: "/lawyer/"
-url: "https://gerganatsirkova.github.io/"
+baseurl: "/lawyer"
+url: "https://gerganatsirkova.github.io"
 twitter_username: Gergana Tsirkova
 github_username: GerganaTsirkova
 
