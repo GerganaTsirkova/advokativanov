@@ -31,7 +31,6 @@ gulp.task("watch", function() {
     gulp.watch(
         [
             "./*.html",
-            "./*.css",
             "./_includes/*.html",
             "./_layouts/*.html",
             "./_posts/**/*.*"

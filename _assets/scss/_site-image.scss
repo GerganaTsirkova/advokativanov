@@ -8,12 +8,12 @@
 
 .site-image-container-first {
     height: 28em;
-    background: url("{{ site.baseurl }}/images/img1.jpg") center center no-repeat;
+    background: url("{{ baseurl }}/images/img1.jpg") center center no-repeat;
     background-size: cover;
 }
 
 .site-image-container-other {
     height: 19em;
-    background: url("{{ site.baseurl }}/images/img2.jpg") bottom center no-repeat;
+    background: url("{{ baseurl }}/images/img2.jpg") bottom center no-repeat;
     background-size: cover;
 }
