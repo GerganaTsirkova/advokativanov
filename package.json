@@ -1,31 +1,32 @@
 {
-  "name": "hyde",
-  "version": "1.0.0",
-  "description": "Jekyll theme by the best HTML & CSS Course",
-  "main": "gulpfile.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kdankov/su-fe2-hyde.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kdankov/su-fe2-hyde/issues"
-  },
-  "homepage": "https://github.com/kdankov/su-fe2-hyde#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "child_process": "^1.0.2",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-exec": "^3.0.2",
-    "gulp-sass": "^4.0.2",
-    "node-sass": "^4.11.0"
-  }
+    "name": "website",
+    "version": "1.0.0",
+    "description": "Jekyll theme by the best HTML & CSS Course",
+    "main": "gulpfile.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://gerganatsirkova.github.io/lawyer-s-website/.git"
+    },
+    "author": "Gergana",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gerganatsirkova.github.io/lawyer-s-website/issues"
+    },
+    "homepage": "https://gerganatsirkova.github.io/lawyer-s-website/#readme",
+    "dependencies": {
+        "fsevents": "^1.2.7",
+        "browser-sync": "^2.26.3",
+        "child_process": "^1.0.2",
+        "gulp": "^4.0.0",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-exec": "^3.0.2",
+        "gulp-sass": "^4.0.2",
+        "node-sass": "^4.11.0"
+    }
 }
