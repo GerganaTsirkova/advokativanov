@@ -9,7 +9,7 @@ gulp.task("scss", function() {
     return gulp.src('_assets/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
-        .pipe(gulp.dest('./docs/css/'))
+        .pipe(gulp.dest('docs/css/'))
         .pipe(browserSync.stream({ match: '**/*.css' }));
 });
 
@@ -36,7 +36,7 @@ gulp.task("watch", function() {
             "./_posts/**/*.*"
         ]
     ).on('change', gulp.series('jekyll', 'scss'));
-    gulp.watch("docs/css/*.css").on('change', browserSync.reload);
+
     gulp.watch('docs/**/*.html').on('change', browserSync.reload);
     gulp.watch('docs/**/*.js').on('change', browserSync.reload);
 
