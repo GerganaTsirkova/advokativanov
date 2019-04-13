@@ -1,10 +1,15 @@
-// When the user scrolls down 10px from the top of the document, show the button
-window.onscroll = function() {
-    scrollFunction();
-};
+function startpage() {
+    window.onscroll = function() {
+        scrollFunction();
+    };
 
-function startApp() {
-
+    function scrollFunction() {
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            document.getElementById("return-to-top").style.display = "block";
+        } else {
+            document.getElementById("return-to-top").style.display = "none";
+        }
+    }
     // highlightm active menu 
     $(function() {
         // this will get the full URL at the address bar
@@ -29,17 +34,7 @@ function startApp() {
     });
 }
 
-
-
-function scrollFunction() {
-    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-        document.getElementById("return-to-top").style.display = "block";
-    } else {
-        document.getElementById("return-to-top").style.display = "none";
-    };
-}
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-};
+}
