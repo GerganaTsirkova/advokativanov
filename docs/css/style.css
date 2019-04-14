@@ -1004,6 +1004,9 @@ input,
   margin-right: 1em;
   font-size: 1.5em; }
 
+section.contacts-text > p {
+  font: inherit; }
+
 /* form container */
 .contacts-container > section:nth-child(3) {
   margin: 3em 2em;
