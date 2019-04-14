@@ -1,19 +1,16 @@
 .site-image-container-first,
 .site-image-container-other {
     width: 100%;
-    background-size: cover;
     display: flex;
     justify-content: center;
 }
 
 .site-image-container-first {
     height: 28em;
-    background: url('../images/img1.jpg') center center no-repeat;
     background-size: cover;
 }
 
 .site-image-container-other {
     height: 19em;
-    background: url('../images/img2.jpg') bottom center no-repeat;
     background-size: cover;
 }
