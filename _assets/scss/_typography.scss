@@ -1,9 +1,15 @@
 html {
     box-sizing: border-box;
+    font: 20px/1.5/'Lato', sans-serif;
 }
 
 body {
     font: inherit
+}
+
+header,
+main {
+    width: 85vw;
 }
 
 h1,
@@ -12,7 +18,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Lato', sans-serif;
     line-height: 1.5;
     margin: 0, 0, 0.5em 0;
     padding: 0;
@@ -43,19 +48,12 @@ h6 {
     font-size: 1.2em
 }
 
-.ampersand {
-    font-weight: bold;
-    font-size: 1.2;
-    color: black;
+li {
+    list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Lato', sans-serif;
+a {
+    text-decoration: none;
 }
 
 @media only screen and (max-width:700px) {

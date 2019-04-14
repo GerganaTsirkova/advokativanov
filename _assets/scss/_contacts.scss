@@ -1,218 +1,193 @@
-@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 fieldset,
 form,
 textarea,
 input,
-.or h3,
-.contacts-container .contacts {
+.or h3 {
     font: inherit;
-    color: var(--frame-color-dark);
+    color: $frame-color-dark;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.heading {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-wrap: wrap;
-}
-
-.heading i {
-    margin-right: 1em;
-    font-size: 1.5em;
 }
 
 .contacts-container {
-    width: 100%;
-    background: var(--font-color-light);
-    padding: 0 5rem 3rem 5rem;
-}
-
-.contacts-container .contacts ul {
-    list-style-type: none;
-    margin-top: 2em;
-}
-
-.contacts-container .contacts li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2em;
-}
-
-.contacts-container .contacts li i {
-    margin-right: 1em;
-    font-size: 1.5em;
-}
-
-section.contacts-text>p {
     font: inherit;
-}
-
-
-/* form container */
-
-.contacts-container>section:nth-child(3) {
-    margin: 3em 2em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.contacts-text {
-    color: var(--frame-color-dark);
-    padding: 3rem;
-}
-
-.form-container,
-input,
-textarea,
-label {
-    font: 18px/1.5/'Lato', sans-serif;
-    overflow: hidden;
-}
-
-.contacts-text>p {
-    text-align: center;
-    margin: 0 5%;
-}
-
-
-/* form and working time */
-
-form,
-section.working-time {
-    width: 40%;
-    color: var(--frame-color-dark);
-}
-
-.working-time {
-    display: flex;
-    flex-direction: column;
-}
-
-fieldset {
+    color: $frame-color-dark;
     width: 100%;
-}
-
-fieldset {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-fieldset p {
-    margin-bottom: 0.5em;
-}
-
-fieldset .field-input {
-    margin-bottom: 1.5em;
-}
-
-fieldset p {
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-fieldset input {
-    padding: 0.3rem 1rem;
-}
-
-div.field-input {
-    border-radius: 0.2rem;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    border: 1px solid var(--frame-color-dark);
-    margin-bottom: 1rem;
-}
-
-div.field-input i {
-    margin: 0 0.5rem;
-}
-
-div.field-input input {
-    padding-right: 1rem;
-    border: none;
-    outline: none;
-    border-left: 1px solid var(--frame-color-dark);
-    border-top: transparent;
-    border-bottom: transparent;
-    width: 100%;
-    padding-left: 0.5em;
-}
-
-.contacts-container hr {
-    border-top: 2px solid var(--color-red);
-    border-bottom: 2px solid var(--color-red);
-    width: 20%;
-    margin: 0 auto;
-    outline: none;
-    margin-bottom: 2.5em;
-}
-
-.contacts-container .contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contacts-container .contacts hr,
-.contacts-container .contacts-text hr {
-    width: 10%;
-}
-
-.working-time>h3 {
-    margin: 0 auto 1.5em auto;
-}
-
-form div.heading {
-    margin: 1.5em auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.working-time>.date-hours {
-    border-bottom: 1px solid var(--frame-color-dark);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.working-time span:first-child {
-    font-weight: bold;
-}
-
-.working-time span {
-    margin: 1.8em 1em 1.8em 0;
-}
-
-form>fieldset>p:nth-child(13)>textarea {
-    width: 100%;
-    margin-bottom: 0.5em;
-    max-width: 100%;
-    margin-top: 2rem;
-    padding: 0.5rem;
-    border: 1px solid var(--frame-color-dark);
-    border-radius: 0.2rem;
-    overflow: auto;
-    outline: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    resize: none;
-    font: 18px/1.5/'Lato', sans-serif;
-}
-
-form>fieldset>p:nth-child(13)>textarea:hover,
-form>fieldset>p:nth-child(13)>textarea:focus {
-    border: 1px solid var(--color-red);
+    background: $font-color-light;
+    padding: 0 5rem 3rem 5rem;
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .heading {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            flex-wrap: wrap;
+            i {
+                margin-right: 1em;
+                font-size: 1.5em;
+            }
+        }
+        ul {
+            list-style-type: none;
+            margin-top: 2em;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2em;
+            >i {
+                margin-right: 1em;
+                font-size: 1.5em;
+            }
+        }
+        hr {
+            width: 10%;
+        }
+    }
+    .contacts-text {
+        color: $frame-color-dark;
+        padding: 0 3rem 3rem 3rem;
+        p {
+            font: inherit;
+            text-align: center;
+            margin: 0 5%;
+        }
+        hr {
+            width: 10%;
+        }
+    }
+    .form-container {
+        font: inherit;
+        overflow: hidden;
+        margin: 3em 2em;
+        display: flex;
+        justify-content: space-between;
+        form {
+            width: 40%;
+            color: $frame-color-dark;
+            .heading {
+                margin: 1.5em auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            fieldset {
+                width: 100%;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                p {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+                .text-area-par {
+                    textarea {
+                        font: inherit;
+                        overflow: hidden;
+                        width: 100%;
+                        margin-bottom: 0.5em;
+                        max-width: 100%;
+                        margin-top: 2rem;
+                        padding: 0.5rem;
+                        border: 1px solid $frame-color-dark;
+                        border-radius: 0.2rem;
+                        overflow: auto;
+                        outline: none;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+                        resize: none;
+                        font: 18px/1.5/'Lato', sans-serif;
+                        &:focus,
+                        &:hover {
+                            border: 2px solid $red;
+                        }
+                    }
+                }
+                .field-input {
+                    border-radius: 0.2rem;
+                    overflow: hidden;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
+                    border: 1px solid $frame-color-dark;
+                    margin-bottom: 1rem;
+                    >i {
+                        margin: 0 0.5rem;
+                    }
+                    >input {
+                        font: inherit;
+                        padding-right: 1rem;
+                        border: none;
+                        outline: none;
+                        border-left: 1px solid $frame-color-dark;
+                        border-top: transparent;
+                        border-bottom: transparent;
+                        width: 100%;
+                        padding-left: 0.5em;
+                    }
+                }
+                input[type="submit"] {
+                    font: inherit;
+                    padding: 0.3rem 1rem;
+                    width: 100%;
+                    margin-top: 2rem;
+                    background: $red;
+                    outline: none;
+                    padding: 1rem;
+                    border-radius: 0.2rem;
+                    box-shadow: 0 0 0.2rem 0 rgba(black, 0.5);
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    &:hover,
+                    &:focus {
+                        background: black;
+                    }
+                }
+            }
+        }
+        .working-time {
+            width: 40%;
+            color: $frame-color-dark;
+            display: flex;
+            flex-direction: column;
+            h3 {
+                margin: 0 auto 1.5em auto;
+            }
+            .date-hours {
+                border-bottom: 1px solid $frame-color-dark;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            span {
+                margin: 1.8em 1em 1.8em 0;
+                &:first-child {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .or {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        i {
+            color: $frame-color-dark;
+            margin-top: 2rem;
+            font-size: 2em;
+        }
+    }
 }
 
 
@@ -223,46 +198,12 @@ fieldset>div.field-input:focus,
 fieldset>div.field-input:hover i,
 fieldset>div.field-input:focus i,
 fieldset>div.field-input>input:hover,
-fieldset>div.field-input>input:focus,
-textarea:hover,
-textarea:focus {
-    border-color: var(--color-red);
-}
-
-fieldset>div.field-input:hover i,
-fieldset>div.field-input:focus i {
-    color: var(--color-red);
+fieldset>div.field-input>input:focus {
+    border: 2px solid $red;
 }
 
 
 /* button submit*/
-
-input[type="submit"] {
-    width: 100%;
-    margin-top: 2rem;
-    background: var(--color-red);
-    outline: none;
-    padding: 1rem;
-    border-radius: 0.2rem;
-    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.5);
-    -moz-appearance: none;
-    -webkit-appearance: none;
-}
-
-.or {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
-}
-
-.or i {
-    color: var(--frame-color-dark);
-    margin-top: 2rem;
-    font-size: 2em;
-}
 
 @media only screen and(max-width:330px) {
     .date-hours {
@@ -286,14 +227,14 @@ input[type="submit"] {
     .form-container {
         margin-right: 2rem;
         margin-left: 2rem;
-    }
-    .form-container form {
-        margin-bottom: 3rem;
-        justify-content: space-between;
-    }
-    .form-container form,
-    .form-container .working-time {
-        width: 100%;
+        form {
+            margin-bottom: 3rem;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .working-time {
+            width: 100%;
+        }
     }
     #nav {
         height: auto;
@@ -301,12 +242,12 @@ input[type="submit"] {
 }
 
 @media only screen and (min-width:1200px) {
-    .form-container form {
-        margin-bottom: 3rem;
-    }
     .form-container {
         display: flex;
         flex-direction: row;
+        form {
+            margin-bottom: 3rem;
+        }
     }
     #nav {
         height: auto;

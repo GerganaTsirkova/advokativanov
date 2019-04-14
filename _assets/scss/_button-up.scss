@@ -7,29 +7,27 @@
     font-size: 3.5em;
     border: none;
     outline: none;
-    background-color: var(--contrast-color);
+    background-color: $contrast-color;
     cursor: pointer;
     border-radius: 50%;
     padding: 0.1rem;
     overflow: hidden;
     height: 1em;
     width: 1em;
-}
-
-#return-to-top i {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
-    outline: none;
-    font-size: 0.6em;
-    color: var(--font-color-dark);
-}
-
-#return-to-top>i:hover {
-    color: var(--frame-color-dark);
+    i {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+        outline: none;
+        font-size: 0.6em;
+        color: $font-color-dark;
+        &:hover {
+            color: $frame-color-dark;
+        }
+    }
 }
 
 @media only screen and (max-width:274px) {
