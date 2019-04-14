@@ -11,7 +11,7 @@
     </header>
     <main class="site-content">
         <div class="articles-container-outer">
-            <hr>
+            <hr class="common-hr">
             <div class="heading-blog">
                 <i class="fas fa-newspaper"></i>
                 <h4>Статии</h4>
@@ -19,7 +19,7 @@
             <div class="articles-container-inner">
                 {% for post in site.posts %}
                 <article class="article-blog">
-                    <h4>{{ post.title }}</h4>
+                    <h3>{{ post.title }}</h3>
                     <p>Автор - Светломир Иванов</p>
                     {% if post.featimg %}
                     <div class="img-post-container">
@@ -32,7 +32,7 @@
                         <a href="{{ site.baseurl }}{{ post.url }}" class="button">Прочети цялата статия</a>
                     </div>
                 </article>
-                <hr> {% endfor %}
+                <hr class="common-hr"> {% endfor %}
             </div>
         </div>
     </main>

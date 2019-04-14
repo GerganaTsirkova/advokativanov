@@ -1,101 +1,90 @@
 /* section advert */
 
-section.advert {
-    background-color: var(--font-color-light);
+.advert {
+    background-color: $font-color-light;
     padding: 1em 3em 3em 3em;
-    color: var(--frame-color-dark);
+    color: $frame-color-dark;
     display: flex;
     flex-direction: column;
+    .advert-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .consultation {
+        width: 100%;
+        .button-main {
+            margin-top: 2.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $font-color-light;
+            padding: 0.5em;
+            a {
+                background: $items-color;
+                color: $font-color-light;
+                padding: 0.5em;
+                &:hover,
+                &:focus {
+                    background: $red;
+                }
+            }
+        }
+    }
+    .lawyers-job {
+        display: block;
+        margin: 0 0 3em 0;
+        .lawyers-job-info {
+            .advert-heading {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h6 {
+                    margin-bottom: 2.5em;
+                }
+            }
+            .advert-main-text {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .image-first-page {
+                    height: 300px;
+                    width: 250px;
+                    overflow: hidden;
+                    position: relative;
+                    margin: 0 2em;
+                    &:before {
+                        display: block;
+                        content: "";
+                        padding-top: 25%;
+                    }
+                    img {
+                        width: auto;
+                        height: 100%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                ul {
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 1em;
+                        i {
+                            color: $frame-color-dark;
+                            margin-right: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-section.advert .advert-heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-section.advert .advert h5 {
-    color: var(--items-color);
-    margin-bottom: 3em;
-}
-
-section.advert h6 {
-    margin-bottom: 2.5em;
-}
-
-section.advert .consultation {
-    width: 100%;
-}
-
-section.advert>section.consultation>section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button-main {
-    margin-top: 2.5em;
-}
-
-a.button {
-    background: var(--items-color);
-    color: var(--font-color-light);
-    padding: 0.5em;
-}
-
-a.button:hover,
-a.button:focus {
-    background: var(--color-red)
-}
-
-
-/* section what is the lawyer */
-
-section.lawyers-job {
-    display: block;
-    margin: 0 0 3em 0;
-}
-
-section.lawyers-job>section.lawyers-job-info>h5 {
-    margin: 0 auto;
-}
-
-.image-first-page {
-    height: 300px;
-    width: 200px;
-    overflow: hidden;
-    position: relative;
-    margin: 0 2em;
-}
-
-.image-first-page:before {
-    display: block;
-    content: "";
-    padding-top: 25%;
-}
-
-.image-first-page img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.advert-main-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.advert-main-text ul i {
-    color: var(--frame-color-dark);
-    margin-right: 1em;
-}
-
-.advert-main-text ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1em;
+@media only screen and (max-width:$phones-m) {
+    .advert-main-text {
+        flex-direction: column;
+    }
 }
