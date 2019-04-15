@@ -18,8 +18,17 @@ hr.common-hr {
     outline: none;
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:$phones-m) {
     hr.common-hr {
         width: 20%;
+    }
+}
+
+@media only screen and (min-width:$phones-l) and (max-width:$tablets-m) {
+    body {
+        font: inherit;
+    }
+    #menu>li>a {
+        padding: 1.5rem;
     }
 }

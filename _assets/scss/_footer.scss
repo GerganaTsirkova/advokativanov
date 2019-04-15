@@ -1,70 +1,94 @@
-footer {
-    .main-footer {
-        background: $frame-color-light;
-        width: 85vw;
-        display: flex;
-        justify-content: space-around;
-        flex-flow: wrap;
-        padding: 3em 5em;
-        border-radius: 0.2rem;
-        ul {
-            color: $font-color-light;
-            list-style-type: none;
-            li {
-                color: $font-color-dark;
-                margin-bottom: 0.7em;
-                &:first-child {
-                    margin-top: 2em;
-                }
-                a {
-                    color: $font-color-dark;
-                    &:hover,
-                    &:focus {
-                        color: $font-color-light;
-                    }
-                }
-                i {
-                    color: $font-color-dark;
-                    font-size: 1.5em;
-                }
-            }
-        }
-        .location {
-            li {
-                display: flex;
-                align-items: center;
-                i {
-                    margin-right: 0.7em;
-                }
-            }
-        }
-        .follow-me {
-            a {
-                display: flex;
-                align-items: center;
-                &:hover i {
-                    color: $font-color-light;
-                }
-                &:focus i {
-                    color: $font-color-light;
-                }
-            }
-            i {
-                margin-right: 0.7em;
-            }
-        }
-        i {
-            font-size: 1.5em;
-        }
+.main-footer {
+    background: $frame-color-light;
+    width: 85vw;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    padding: 3em 5em;
+    border-radius: 0.2rem;
+}
+
+.main-footer ul {
+    color: $font-color-light;
+    list-style-type: none;
+}
+
+.main-footer ul li:first-child {
+    margin-top: 2em;
+}
+
+.main-footer ul li {
+    margin-bottom: 0.7em;
+}
+
+.main-footer li a,
+.main-footer li i,
+.main-footer li {
+    color: $font-color-dark;
+    text-decoration: none;
+}
+
+footer i {
+    font-size: 1.5em;
+}
+
+
+/* second colomn location */
+
+.location li {
+    display: flex;
+    align-items: center;
+}
+
+.location li i {
+    margin-right: 0.7em;
+}
+
+
+/* third colomn social networks */
+
+.follow-me a {
+    display: flex;
+    align-items: center;
+}
+
+.follow-me i {
+    margin-right: 0.7em;
+}
+
+
+/* hover efects */
+
+.main-footer li a:hover,
+.main-footer li a:focus,
+.main-footer .follow-me a:hover i,
+.main-footer .follow-me a:focus i {
+    color: $font-color-light;
+}
+
+
+/* bottom footer */
+
+.creator {
+    background: $frame-color-dark;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $font-color-dark;
+    font-size: 0.8em;
+}
+
+@media only screen and (min-width:$phones-m) {
+    body>header.site-header,
+    body>main,
+    body>footer.site-footer {
+        width: 100vw;
+        overflow: hidden;
     }
-    .creator {
-        background: $frame-color-dark;
-        height: 2em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: $font-color-dark;
-        font-size: 0.8em;
+    footer>section.main-footer {
+        width: 100vw;
+        flex-direction: row;
     }
 }
 
@@ -108,19 +132,6 @@ footer {
     }
     body>footer>section.main-footer {
         padding: 2rem 2rem 0 2rem
-    }
-}
-
-@media only screen and (min-width:$phones-m) {
-    body>header.site-header,
-    body>main,
-    body>footer.site-footer {
-        width: 100vw;
-        overflow: hidden;
-    }
-    footer>section.main-footer {
-        width: 100vw;
-        flex-direction: row;
     }
 }
 

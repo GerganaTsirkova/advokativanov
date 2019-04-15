@@ -14,20 +14,22 @@
     overflow: hidden;
     height: 1em;
     width: 1em;
-    i {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-        height: 80%;
-        outline: none;
-        font-size: 0.6em;
-        color: $font-color-dark;
-        &:hover {
-            color: $frame-color-dark;
-        }
-    }
+}
+
+#return-to-top i {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    outline: none;
+    font-size: 0.6em;
+    color: $font-color-dark;
+}
+
+#return-to-top>i:hover {
+    color: $frame-color-dark;
 }
 
 @media only screen and (max-width:$phones-s) {
