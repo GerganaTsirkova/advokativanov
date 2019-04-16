@@ -24,6 +24,24 @@ hr.common-hr {
     }
 }
 
+@media only screen and (max-width:$tablets-s) {
+    body>header.site-header,
+    body>main,
+    body>footer.site-footer {
+        width: 100vw;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width:$tablets-s) {
+    body>header.site-header,
+    body>main,
+    body>footer.site-footer {
+        width: 85vw;
+        overflow: hidden;
+    }
+}
+
 @media only screen and (min-width:$phones-l) and (max-width:$tablets-m) {
     body {
         font: inherit;

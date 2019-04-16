@@ -2,6 +2,9 @@
     background: $font-color-light;
     padding: 3em;
     color: $frame-color-dark;
+    h3 {
+        color: $items-color;
+    }
 }
 
 .heading-main {
@@ -9,10 +12,6 @@
     justify-content: center;
     align-items: center;
     margin-bottom: $ws-most-used;
-}
-
-.law-content h3 {
-    color: $items-color;
 }
 
 .heading-small {
@@ -23,10 +22,9 @@
 .sub-service {
     display: flex;
     margin-bottom: 1em;
-}
-
-.sub-service i {
-    margin-right: 0.8em;
+    i {
+        margin-right: 0.8em;
+    }
 }
 
 .law-content>section>a,
@@ -40,7 +38,7 @@
 
 .law-content>section>a:hover,
 .law-content>section>a:focus {
-    background: $color-red;
+    background: $red;
 }
 
 .img-container-services {

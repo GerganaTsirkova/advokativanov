@@ -1,39 +1,49 @@
-.main-footer {
-    background: $frame-color-light;
-    width: 85vw;
+.site-footer {
     display: flex;
-    justify-content: space-around;
-    flex-flow: wrap;
-    padding: 3em 5em;
-    border-radius: 0.2rem;
-}
-
-.main-footer ul {
-    color: $font-color-light;
-    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    >.main-footer {
+        padding: 3em;
+        background: $frame-color-light;
+        width: 85vw;
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: wrap;
+        border-radius: 0.2rem;
+        ul {
+            color: $font-color-light;
+            list-style-type: none;
+            li {
+                margin-bottom: 0.7em;
+                color: $font-color-dark;
+                text-decoration: none;
+                a,
+                i {
+                    color: $font-color-dark;
+                    text-decoration: none;
+                }
+                i {
+                    font-size: 1.5em;
+                }
+            }
+        }
+        .location,
+        .navigation {
+            margin-right: 2em;
+        }
+        .location {
+            margin-left: 3em;
+        }
+        .follow-me {
+            margin-right: 3em;
+        }
+    }
 }
 
 .main-footer ul li:first-child {
     margin-top: 2em;
 }
-
-.main-footer ul li {
-    margin-bottom: 0.7em;
-}
-
-.main-footer li a,
-.main-footer li i,
-.main-footer li {
-    color: $font-color-dark;
-    text-decoration: none;
-}
-
-footer i {
-    font-size: 1.5em;
-}
-
-
-/* second colomn location */
 
 .location li {
     display: flex;
@@ -79,90 +89,138 @@ footer i {
     font-size: 0.8em;
 }
 
-@media only screen and (min-width:$phones-m) {
-    body>header.site-header,
-    body>main,
-    body>footer.site-footer {
-        width: 100vw;
-        overflow: hidden;
-    }
-    footer>section.main-footer {
-        width: 100vw;
-        flex-direction: row;
+@media only screen and (max-width:400px) {
+    footer {
+        .creator {
+            height: 5em;
+            text-align: center;
+        }
+        .follow-me,
+        .location,
+        .navigation {
+            margin: 3em;
+        }
     }
 }
 
-@media only screen and (max-width:$phones-l) {
-    body>header.site-header,
-    body>main,
-    body>footer.site-footer {
-        width: 100vw;
-        overflow: hidden;
+@media only screen and (min-width:400px) and (max-width:$phones-m) {
+    //400-700px
+    footer {
+        .main-footer {
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .follow-me,
+            .location,
+            .navigation {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+                margin: 3em;
+            }
+        }
     }
-    footer>section.main-footer {
+}
+
+@media only screen and (min-width:$phones-m) and (max-width:$phones-l) {
+    //700-800
+    .main-footer {
         width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        flex-flow: wrap;
-        padding: 3em 3em 0 3em;
-    }
-    footer>section.main-footer>section {
-        margin: 2em 3em;
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
-    section.main-footer>section.location>ul>li:nth-child(1)>section {
-        text-align: left;
-    }
-    .main-footer>section ul li {
-        margin-bottom: 1.5em;
-    }
-    .main-footer>section {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    footer .creator {
-        height: 3em;
-        text-align: center;
-        overflow: hidden;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    body>footer>section.main-footer {
-        padding: 2rem 2rem 0 2rem
+        align-items: baseline;
+        .follow-me {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3em;
+        }
+        .navigation {
+            margin-right: 3em;
+        }
     }
 }
 
-@media only screen and (min-width:$tablets-s) {
-    body>header.site-header,
-    body>main,
-    body>footer.site-footer {
-        width: 85vw;
-        overflow: hidden;
+@media only screen and (min-width:$phones-l) and (max-width:$tablets-s) {
+    //800-1100
+    .site-footer {
+        .main-footer {
+            width: 100vw;
+            flex-direction: column;
+            flex-flow: wrap;
+            align-items: flex-start;
+            padding: 2em;
+            .follow-me,
+            .location,
+            .navigation {
+                margin: 2em;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: space-around;
+                li {
+                    margin-bottom: 1.5em;
+                }
+            }
+            .location {
+                >ul {
+                    >li {
+                        &:nth-child(1) {
+                            >section {
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .creator {
+            height: 3em;
+            text-align: center;
+            overflow: hidden;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
     }
-    footer>section.main-footer {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        flex-flow: wrap;
-        padding: 3em 5em;
+}
+
+@media only screen and (min-width:$tablets-s) and (max-width:$desktops) {
+    //1920
+    footer {
+        .main-footer {
+            width: 85vw;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+        .location,
+        .navigation,
+        .follow-me {
+            margin: 1em;
+        }
     }
 }
 
 @media only screen and (min-width:$desktops) {
-    body>header.site-header,
-    body>main,
-    body>footer.site-footer {
+    .main-footer {
         width: 85vw;
-        overflow: hidden;
-    }
-    footer>section.main-footer {
-        width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-flow: wrap;
-        padding: 3em 5em;
+        padding: 0 5em;
+    }
+    .location {
+        margin-left: 3em;
+    }
+    .navigation {
+        margin-right: 3em;
     }
 }

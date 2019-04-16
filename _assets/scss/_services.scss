@@ -9,16 +9,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.services-head>hr {
-    margin-bottom: $ws-most-used;
-    margin-top: 3em;
-}
-
-section.services-head>p {
-    margin: 0 3em;
-    text-indent: 5%;
+    hr {
+        margin-bottom: $ws-most-used;
+        margin-top: 3em;
+    }
+    p {
+        margin: 0 3em;
+        text-indent: 5%;
+    }
 }
 
 .services-main {
@@ -29,64 +27,61 @@ section.services-head>p {
     grid-template-columns: 22vw 22vw 22vw;
     justify-content: center;
     border: none;
-}
-
-.service {
-    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
-    border-radius: 0.5rem;
-    background: #e6e6e6;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 1.5em;
-}
-
-.service-img-container {
-    overflow: hidden;
-    position: relative;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-}
-
-.service-img-container::before {
-    display: block;
-    content: "";
-    padding-top: 56.25%;
-}
-
-.service-img-container img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: auto;
-}
-
-.service-text,
-.service-btn {
-    text-align: center;
-}
-
-.service-text h6,
-.service-btn {
-    padding: 1em;
-}
-
-.service-btn a {
-    background: $items-color;
-    border-radius: 0.3rem;
-    padding: 0.5rem 1rem;
-    color: $font-color-light;
-    text-decoration: none;
-    margin-bottom: 2em;
-    line-height: 1.5;
-    box-shadow: 0 0 0.3rem 0 rgba(black, 0.5);
-    outline: none;
-}
-
-.service-btn a:hover {
-    background: $red;
+    .service {
+        box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
+        border-radius: 0.5rem;
+        background: #e6e6e6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 1.5em;
+        .service-img-container {
+            overflow: hidden;
+            position: relative;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            &:before {
+                display: block;
+                content: "";
+                padding-top: 56.25%;
+            }
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: auto;
+            }
+        }
+        .service-text,
+        .service-btn {
+            text-align: center;
+        }
+        .service-text {
+            h6 {
+                padding: 1em;
+            }
+        }
+        .service-btn {
+            padding: 1em;
+            a {
+                background: $items-color;
+                border-radius: 0.3rem;
+                padding: 0.5rem 1rem;
+                color: $font-color-light;
+                text-decoration: none;
+                margin-bottom: 2em;
+                line-height: 1.5;
+                box-shadow: 0 0 0.3rem 0 rgba(black, 0.5);
+                outline: none;
+                &:hover,
+                &:focus {
+                    background: $red;
+                }
+            }
+        }
+    }
 }
 
 
@@ -123,25 +118,25 @@ section.services-head>p {
 }
 
 @media only screen and (max-width:$phones-l) {
-    section.services-head {
+    .services-head {
         padding: 0 2em 2em 2em;
+        p {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
     .services-main {
         padding: 1em 2em 2em 2em;
-    }
-    section.services-head>p {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .services-main {
         display: block;
-    }
-    .service {
-        margin-bottom: 2em;
-    }
-    .service-btn a {
-        line-height: 2;
-        padding: 1em 1.5em;
+        .service {
+            margin-bottom: 2em;
+            .service-btn {
+                a {
+                    line-height: 2;
+                    padding: 1em 1.5em;
+                }
+            }
+        }
     }
 }
 
@@ -151,10 +146,8 @@ section.services-head>p {
         grid-gap: 6em;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 30vw 30vw;
-    }
-    .service-btn {
-        padding-top: 0;
+        .service-btn {
+            padding-top: 0;
+        }
     }
 }
-
-@media only screen and (min-width:$desktops) {}

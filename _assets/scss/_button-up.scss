@@ -14,55 +14,49 @@
     overflow: hidden;
     height: 1em;
     width: 1em;
-}
-
-#return-to-top i {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
-    outline: none;
-    font-size: 0.6em;
-    color: $font-color-dark;
-}
-
-#return-to-top>i:hover {
-    color: $frame-color-dark;
-}
-
-@media only screen and (max-width:$phones-s) {
-    #return-to-top {
-        bottom: 0.5rem;
-        right: 0;
+    i {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+        outline: none;
+        font-size: 0.6em;
+        color: $font-color-dark;
+        &:hover,
+        &:focus {
+            color: $frame-color-dark;
+        }
     }
 }
 
-@media only screen and (max-width:$tablets-s) {
+@media only screen and (max-width:$phones-s) {
+    //274
+    #return-to-top {
+        bottom: 3rem;
+        right: 0.5rem;
+    }
+}
+
+@media only screen and (min-width:$phones-s) and (max-width:$tablets-s) {
+    //274-1100
     #return-to-top {
         bottom: 0.8rem;
         right: 0.8rem;
     }
 }
 
-@media only screen and (min-width:$tablets-s) {
+@media only screen and (min-width:$tablets-s) and (max-width:$tablets-l) {
     #return-to-top {
         bottom: 1rem;
         right: 1.5rem;
     }
 }
 
-@media only screen and (max-width:$tablets-l) {
+@media only screen and (min-width:$tablets-l) {
     #return-to-top {
-        bottom: 1.1rem;
-        right: 1.1rem;
-    }
-}
-
-@media only screen and (max-width:$desktops) {
-    #return-to-top {
-        bottom: 1.2rem;
-        right: 1.2rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
     }
 }
