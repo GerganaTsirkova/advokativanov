@@ -297,7 +297,7 @@ input[type="submit"] {
       text-align: center; }
       .services-main .service .service-text h6 {
         padding: 1em; }
-    .services-main .service a {
+    .services-main .service > a {
       text-align: center;
       margin: 1em auto;
       background: #954037;
@@ -309,7 +309,7 @@ input[type="submit"] {
       line-height: 1.5;
       box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.5);
       outline: none; }
-      .services-main .service a:hover, .services-main .service a:focus {
+      .services-main .service > a:hover, .services-main .service > a:focus {
         background: #8B0000; }
 
 /* efect */
