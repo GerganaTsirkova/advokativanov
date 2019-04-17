@@ -58,6 +58,8 @@ input,
 .contacts-text {
     color: $frame-color-dark;
     padding: 3rem;
+    line-height: 1.5;
+    text-indent: 5%;
 }
 
 .form-container,
@@ -264,48 +266,81 @@ input[type="submit"]:focus {
 }
 
 @media only screen and(max-width:330px) {
+    .contacts-container {
+        padding: 3rem 1rem;
+        .form-container {
+            margin-right: 2rem;
+            margin-left: 2rem;
+            flex-direction: column;
+            form {
+                margin-bottom: 3rem;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .working-time {
+                width: 100%;
+            }
+        }
+    }
     .date-hours {
         flex-direction: column;
     }
 }
 
-@media only screen and (max-width:$phones-l) {
+@media only screen and (min-width:$phones-l) {
     .contacts-container {
         padding: 3rem 1rem;
+        .form-container {
+            margin-right: 2rem;
+            margin-left: 2rem;
+            flex-direction: column;
+            form {
+                margin-bottom: 3rem;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .working-time {
+                width: 100%;
+            }
+        }
     }
     .contacts-text {
         display: block;
     }
 }
 
-@media only screen and (max-width:$tablets-m) {
+@media only screen and (min-width:$phones-l) and (max-width:900px) {
     body {
         padding-top: 0;
     }
-    .form-container {
-        margin-right: 2rem;
-        margin-left: 2rem;
-    }
-    .form-container form {
-        margin-bottom: 3rem;
-        justify-content: space-between;
-    }
-    .form-container form,
-    .form-container .working-time {
-        width: 100%;
+    .contacts-container {
+        .form-container {
+            margin-right: 2rem;
+            margin-left: 2rem;
+            display: flex;
+            flex-direction: column;
+            form {
+                margin-bottom: 3rem;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .working-time {
+                width: 100%;
+            }
+        }
     }
     #nav {
         height: auto;
     }
 }
 
-@media only screen and (min-width:$tablets-m) {
-    .form-container form {
-        margin-bottom: 3rem;
-    }
+@media only screen and (min-width:900px) and (max-width:$tablets-m) {
     .form-container {
         display: flex;
         flex-direction: row;
+        form {
+            margin-bottom: 3rem;
+        }
     }
     #nav {
         height: auto;
