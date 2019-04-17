@@ -192,9 +192,6 @@ input[type="submit"] {
         .advert .lawyers-job .lawyers-job-info .advert-main-text ul li i {
           color: #120807;
           margin-right: 1em; }
-    .advert .lawyers-job .lawyers-job-info p {
-      text-indent: 5%;
-      line-height: 1.5; }
     .advert .lawyers-job .image-first-page {
       height: 300px;
       width: 200px;
@@ -913,10 +910,9 @@ input,
   justify-content: center;
   align-items: baseline;
   flex-wrap: wrap; }
-
-.heading i {
-  margin-right: 1em;
-  font-size: 1.5em; }
+  .heading i {
+    margin-right: 1em;
+    font-size: 1.5em; }
 
 .contacts-container {
   width: 100%;
