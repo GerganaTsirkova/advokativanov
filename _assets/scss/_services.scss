@@ -69,23 +69,23 @@
             h6 {
                 padding: 1em;
             }
-        }
-        .button-service {
-            text-align: center;
-            margin: 1em auto;
-            background: $items-color;
-            border-radius: 0.3rem;
-            padding: 0.5rem 1rem;
-            color: $font-color-light;
-            text-decoration: none;
-            line-height: 1.5;
-            box-shadow: 0 0 0.3rem 0 rgba(black, 0.5);
-            outline: none;
-            width: 50%;
-            margin: 0 auto;
-            &:hover,
-            &:focus {
-                background: $red;
+            .button-service {
+                text-align: center;
+                margin: 1em auto;
+                background: $items-color;
+                border-radius: 0.3rem;
+                padding: 0.5rem 1rem;
+                color: $font-color-light;
+                text-decoration: none;
+                line-height: 1.5;
+                box-shadow: 0 0 0.3rem 0 rgba(black, 0.5);
+                outline: none;
+                width: 50%;
+                margin: 0 auto;
+                &:hover,
+                &:focus {
+                    background: $red;
+                }
             }
         }
     }
