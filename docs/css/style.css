@@ -279,7 +279,7 @@ input[type="submit"] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 1.5em; }
+    padding-bottom: 3em; }
     .services-main .service .service-img-container {
       overflow: hidden;
       position: relative;
@@ -309,10 +309,11 @@ input[type="submit"] {
       padding: 0.5rem 1rem;
       color: #f7f1ee;
       text-decoration: none;
-      margin-bottom: 2em;
       line-height: 1.5;
       box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.5);
-      outline: none; }
+      outline: none;
+      width: 50%;
+      margin: 0 auto; }
       .services-main .service > a.button:hover, .services-main .service > a.button:focus {
         background: #8B0000; }
 
