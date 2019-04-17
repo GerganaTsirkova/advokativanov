@@ -85,9 +85,6 @@ body {
 main.site-content {
   background: #f7f1ee;
   color: #120807; }
-  main.site-content #text {
-    text-indent: 5%;
-    line-height: 1.5; }
 
 hr.common-hr {
   width: 10%;
@@ -173,7 +170,7 @@ input[type="submit"] {
         padding: 0.5em; }
         .advert .consultation .button-main a.button:hover, .advert .consultation .button-main a.button:focus {
           background: #8B0000; }
-    .advert .consultation > p {
+    .advert .consultation #text {
       text-indent: 5%;
       line-height: 1.5; }
   .advert .lawyers-job {
@@ -192,7 +189,7 @@ input[type="submit"] {
         .advert .lawyers-job .lawyers-job-info .advert-main-text ul li i {
           color: #120807;
           margin-right: 1em; }
-    .advert .lawyers-job .lawyers-job-info > p {
+    .advert .lawyers-job .lawyers-job-info #text {
       text-indent: 5%;
       line-height: 1.5; }
     .advert .lawyers-job .image-first-page {
@@ -298,7 +295,7 @@ input[type="submit"] {
       text-align: center; }
       .services-main .service .service-text h6 {
         padding: 1em; }
-    .services-main .service > a {
+    .services-main .service .button {
       text-align: center;
       margin: 1em auto;
       background: #954037;
@@ -310,7 +307,7 @@ input[type="submit"] {
       line-height: 1.5;
       box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.5);
       outline: none; }
-      .services-main .service > a:hover, .services-main .service > a:focus {
+      .services-main .service .button:hover, .services-main .service .button:focus {
         background: #8B0000; }
 
 /* efect */
@@ -408,10 +405,10 @@ input[type="submit"] {
       font-size: 1.5em; }
     .prices .heading h4 {
       margin-bottom: 2.5em; }
-  .prices p {
-    line-height: 1.5;
-    text-indent: 5%; }
-    .prices p .link {
+  .prices #text {
+    text-indent: 5%;
+    line-height: 1.5; }
+    .prices #text .link {
       text-decoration: none;
       color: #8B0000; }
 
