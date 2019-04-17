@@ -22,8 +22,10 @@
         margin-bottom: $ws-most-used;
         margin-top: 3em;
     }
-    p {
+    p.text {
         margin: 0 3em;
+        line-height: 1.5;
+        text-indent: 5%;
     }
 }
 

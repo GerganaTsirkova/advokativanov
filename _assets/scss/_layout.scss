@@ -12,6 +12,11 @@ body {
     }
 }
 
+p.text {
+    text-indent: 5%;
+    line-height: 1.5;
+}
+
 main.site-content {
     background: $font-color-light;
     color: $frame-color-dark;
