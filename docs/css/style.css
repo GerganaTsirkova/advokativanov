@@ -85,6 +85,9 @@ body {
 main.site-content {
   background: #f7f1ee;
   color: #120807; }
+  main.site-content #text {
+    text-indent: 5%;
+    line-height: 1.5; }
 
 hr.common-hr {
   width: 10%;
@@ -256,9 +259,7 @@ input[type="submit"] {
     margin-bottom: 2.5em;
     margin-top: 3em; }
   .services-head p {
-    margin: 0 3em;
-    text-indent: 5%;
-    line-height: 1.5; }
+    margin: 0 3em; }
 
 .services-main {
   padding: 3.5em 2em;
