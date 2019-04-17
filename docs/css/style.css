@@ -1157,7 +1157,7 @@ input[type="submit"]:focus {
   .contacts-text {
     display: block; } }
 
-@media only screen and (min-width: 800px) and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   body {
     padding-top: 0; }
   .contacts-container .form-container {
@@ -1171,15 +1171,6 @@ input[type="submit"]:focus {
       width: 100%; }
     .contacts-container .form-container .working-time {
       width: 100%; }
-  #nav {
-    height: auto; } }
-
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
-  .form-container {
-    display: flex;
-    flex-direction: row; }
-    .form-container form {
-      margin-bottom: 3rem; }
   #nav {
     height: auto; } }
 
@@ -1202,6 +1193,7 @@ input[type="submit"]:focus {
     margin: 1.5em 0;
     font-style: italic; }
   .single-article .article-button {
+    width: 20%;
     background: #954037;
     padding: 0.5rem 1rem;
     margin: 2em auto 0 auto;
@@ -1272,6 +1264,7 @@ input[type="submit"]:focus {
           text-indent: 5%;
           line-height: 1.5; }
       .articles-container-outer .articles-container-inner .article-blog .button-blog a {
+        width: 20%;
         box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
         background: #954037;
         padding: 0.5rem 1rem; }
