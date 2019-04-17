@@ -170,6 +170,9 @@ input[type="submit"] {
         padding: 0.5em; }
         .advert .consultation .button-main a.button:hover, .advert .consultation .button-main a.button:focus {
           background: #8B0000; }
+    .advert .consultation p {
+      text-indent: 5%;
+      line-height: 1.5; }
   .advert .lawyers-job {
     display: block;
     margin: 0 0 3em 0; }
@@ -186,6 +189,9 @@ input[type="submit"] {
         .advert .lawyers-job .lawyers-job-info .advert-main-text ul li i {
           color: #120807;
           margin-right: 1em; }
+    .advert .lawyers-job .lawyers-job-info p {
+      text-indent: 5%;
+      line-height: 1.5; }
     .advert .lawyers-job .image-first-page {
       height: 300px;
       width: 200px;
@@ -251,7 +257,8 @@ input[type="submit"] {
     margin-top: 3em; }
   .services-head p {
     margin: 0 3em;
-    text-indent: 5%; }
+    text-indent: 5%;
+    line-height: 1.5; }
 
 .services-main {
   padding: 3.5em 2em;
@@ -400,9 +407,12 @@ input[type="submit"] {
       font-size: 1.5em; }
     .prices .heading h4 {
       margin-bottom: 2.5em; }
-  .prices p .link {
-    text-decoration: none;
-    color: #8B0000; }
+  .prices p {
+    line-height: 1.5;
+    text-indent: 5%; }
+    .prices p .link {
+      text-decoration: none;
+      color: #8B0000; }
 
 @media only screen and (max-width: 800px) {
   #nav {
@@ -431,6 +441,9 @@ input[type="submit"] {
       align-self: center; }
     .subscribe-info > .heading .subscribe-h4 {
       width: 100%; }
+  .subscribe-info p {
+    text-indent: 5%;
+    line-height: 1.5; }
   .subscribe-info .image-container-subscription {
     margin: 3em auto;
     overflow: hidden;
@@ -1158,7 +1171,8 @@ input[type="submit"]:focus {
   .single-article .blog-heading {
     margin: 2.5em auto; }
   .single-article p {
-    text-indent: 5%; }
+    text-indent: 5%;
+    line-height: 1.5; }
 
 @media only screen and (max-width: 800px) {
   .single-article .featimg-post {
@@ -1192,8 +1206,7 @@ input[type="submit"]:focus {
   .articles-container-outer .heading-blog {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 2.5em; }
+    align-items: center; }
     .articles-container-outer .heading-blog i {
       margin-right: 1em;
       font-size: 1.5em; }
@@ -1213,6 +1226,9 @@ input[type="submit"]:focus {
       .articles-container-outer .articles-container-inner .article-blog .post-partly-content {
         text-indent: 5%;
         margin-bottom: 2.5em; }
+        .articles-container-outer .articles-container-inner .article-blog .post-partly-content p {
+          text-indent: 5%;
+          line-height: 1.5; }
       .articles-container-outer .articles-container-inner .article-blog .button-blog a {
         box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
         background: #954037;
