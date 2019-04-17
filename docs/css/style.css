@@ -307,21 +307,21 @@ input[type="submit"] {
       text-align: center; }
       .services-main .service .service-text h6 {
         padding: 1em; }
-      .services-main .service .service-text .button-service {
-        text-align: center;
-        margin: 1em auto;
-        background: #954037;
-        border-radius: 0.3rem;
-        padding: 0.5rem 1rem;
-        color: #f7f1ee;
-        text-decoration: none;
-        line-height: 1.5;
-        box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.5);
-        outline: none;
-        width: 50%;
-        margin: 0 auto; }
-        .services-main .service .service-text .button-service:hover, .services-main .service .service-text .button-service:focus {
-          background: #8B0000; }
+    .services-main .service .button-service {
+      text-align: center;
+      margin: 1em auto;
+      background: #954037;
+      border-radius: 0.3rem;
+      padding: 0.5rem 1rem;
+      color: #f7f1ee;
+      text-decoration: none;
+      line-height: 1.5;
+      box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.5);
+      outline: none;
+      width: 50%;
+      margin: 0 auto; }
+      .services-main .service .button-service:hover, .services-main .service .button-service:focus {
+        background: #8B0000; }
 
 /* efect */
 .img-inner-shadow .layer {
