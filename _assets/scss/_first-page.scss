@@ -6,6 +6,10 @@
     color: $frame-color-dark;
     display: flex;
     flex-direction: column;
+    #text {
+        text-indent: 5%;
+        line-height: 1.5;
+    }
     .advert-heading {
         text-align: center;
         h6 {
@@ -37,6 +41,10 @@
     .lawyers-job {
         display: block;
         margin: 0 0 3em 0;
+        #text {
+            text-indent: 5%;
+            line-height: 1.5;
+        }
         .lawyers-job-info {
             h6 {
                 margin: 0 auto;
