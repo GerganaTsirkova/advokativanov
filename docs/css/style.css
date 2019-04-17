@@ -173,7 +173,7 @@ input[type="submit"] {
         padding: 0.5em; }
         .advert .consultation .button-main a.button:hover, .advert .consultation .button-main a.button:focus {
           background: #8B0000; }
-    .advert .consultation p {
+    .advert .consultation > p {
       text-indent: 5%;
       line-height: 1.5; }
   .advert .lawyers-job {
@@ -192,6 +192,9 @@ input[type="submit"] {
         .advert .lawyers-job .lawyers-job-info .advert-main-text ul li i {
           color: #120807;
           margin-right: 1em; }
+    .advert .lawyers-job .lawyers-job-info > p {
+      text-indent: 5%;
+      line-height: 1.5; }
     .advert .lawyers-job .image-first-page {
       height: 300px;
       width: 200px;
