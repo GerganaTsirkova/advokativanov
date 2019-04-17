@@ -9,6 +9,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .heading {
+        margin-bottom: $ws-most-used;
+    }
     hr {
         margin-bottom: $ws-most-used;
         margin-top: 3em;
@@ -54,31 +57,27 @@
                 height: auto;
             }
         }
-        .service-text,
-        .service-btn {
-            text-align: center;
-        }
         .service-text {
+            text-align: center;
             h6 {
                 padding: 1em;
             }
         }
-        .service-btn {
-            padding: 1em;
-            a {
-                background: $items-color;
-                border-radius: 0.3rem;
-                padding: 0.5rem 1rem;
-                color: $font-color-light;
-                text-decoration: none;
-                margin-bottom: 2em;
-                line-height: 1.5;
-                box-shadow: 0 0 0.3rem 0 rgba(black, 0.5);
-                outline: none;
-                &:hover,
-                &:focus {
-                    background: $red;
-                }
+        a {
+            text-align: center;
+            margin: 1em auto;
+            background: $items-color;
+            border-radius: 0.3rem;
+            padding: 0.5rem 1rem;
+            color: $font-color-light;
+            text-decoration: none;
+            margin-bottom: 2em;
+            line-height: 1.5;
+            box-shadow: 0 0 0.3rem 0 rgba(black, 0.5);
+            outline: none;
+            &:hover,
+            &:focus {
+                background: $red;
             }
         }
     }

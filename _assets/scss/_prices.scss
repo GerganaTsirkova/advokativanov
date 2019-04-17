@@ -3,27 +3,25 @@
     color: $frame-color-dark;
     padding: 0 3rem 3rem 3rem;
     text-indent: 5%;
-}
-
-.prices a {
-    text-decoration: none;
-    color: var(--color-red);
-}
-
-.heading {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-wrap: wrap;
-}
-
-.heading i {
-    margin-right: 1em;
-    font-size: 1.5em;
-}
-
-.heading h4 {
-    margin-bottom: 2.5em;
+    .heading {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        i {
+            margin-right: 1em;
+            font-size: 1.5em;
+        }
+        h4 {
+            margin-bottom: 2.5em;
+        }
+    }
+    p {
+        .link {
+            text-decoration: none;
+            color: $red;
+        }
+    }
 }
 
 @media only screen and (max-width:$phones-l) {

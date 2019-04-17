@@ -4,93 +4,64 @@
     padding: 0 5rem 3rem 5rem;
     text-align: center;
     text-indent: 5%;
-}
-
-.subscribe-info .heading {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-// .subscribe-info hr {
-//     border: 2px solid $red;
-//     width: 10%;
-//     margin: 0 auto;
-//     outline: none;
-//     margin-bottom: 2.5em;
-//     border-radius: 0.5rem;
-// }
-.subscribe-info hr:nth-child(4),
-.subscribe-info hr:nth-child(6) {
-    margin-top: $ws-most-used;
-}
-
-.subscribe-info .heading {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.subscribe-info .heading i {
-    margin-right: 1em;
-    font-size: 1.5em;
-    margin-bottom: $ws-most-used;
-}
-
-.subscribe-info h4 {
-    display: inline-block;
-}
-
-.image-container-subscription {
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-}
-
-.image-container-subscription::before {
-    display: block;
-    content: '';
-    padding-top: 56.25%;
-}
-
-img.image-subscription {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: auto;
-}
-
-.subscribe-info ul {
-    text-indent: 0;
-    list-style-type: none;
-    text-align: left;
-}
-
-.subscribe-info ul li {
-    text-indent: 0;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    margin-bottom: 2em;
-}
-
-.subscribe-info ul li i {
-    margin-right: 1rem;
-    font-size: 1.2em;
-    color: $contrast-color;
+    >.heading {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        margin-bottom: $ws-most-used;
+        i {
+            margin-right: 1em;
+            font-size: 1.5em;
+            align-self: center;
+        }
+        .subscribe-h4 {
+            width: 100%;
+        }
+    }
+    .image-container-subscription {
+        margin: 3em auto;
+        overflow: hidden;
+        position: relative;
+        &::before {
+            display: block;
+            content: '';
+            padding-top: 56.25%;
+        }
+        .image-subscription {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+        }
+    }
+    ul {
+        text-indent: 0;
+        list-style-type: none;
+        text-align: left;
+        li {
+            text-indent: 0;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            margin-bottom: 2em;
+            i {
+                margin-right: 1rem;
+                font-size: 1.2em;
+                color: $contrast-color;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width:$phones-l) {
     .subscribe-info {
         padding: 3rem 1rem;
-    }
-    .image-container-subscription {
-        height: 35vh;
+        .image-container-subscription {
+            height: 35vh;
+        }
     }
 }
 
@@ -99,5 +70,3 @@ img.image-subscription {
         height: 45vw;
     }
 }
-
-@media only screen and (min-width:$desktops) {}

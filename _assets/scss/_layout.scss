@@ -6,7 +6,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden
+    overflow-x: hidden;
+    .site-content {
+        padding-top: 1.5em;
+    }
+}
+
+main.site-content {
+    background: $font-color-light;
+    color: $frame-color-dark;
 }
 
 hr.common-hr {
