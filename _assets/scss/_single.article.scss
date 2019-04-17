@@ -1,12 +1,11 @@
 .single-article {
     padding: 0 $ws-most-used $ws-most-used $ws-most-used;
-    .blog-heading,
     .article-part {
-        text-align: center;
+        margin: 1em auto;
     }
     .featimg-post {
         width: 40%;
-        box-shadow: 0 0 0.5rem 0 rgba(black, 0.5);
+        box-shadow: 0 0 1rem 0 rgba(black, 0.3);
         border: 0.2em solid $frame-color-dark;
         height: auto;
         margin: 0 $ws-most-used $ws-most-used 0;
@@ -21,10 +20,15 @@
     .article-button {
         background: $items-color;
         padding: 0.5rem 1rem;
-        margin-top: 2em;
+        margin: 2em auto 0 auto;
+        box-shadow: 0 0 0.5rem 0 rgba(black, 0.5);
+        &:hover,
+        &:focus {
+            background: $red;
+        }
     }
     .blog-heading {
-        margin-bottom: $ws-most-used;
+        margin: 2.5em auto;
     }
     p {
         text-indent: 5%;

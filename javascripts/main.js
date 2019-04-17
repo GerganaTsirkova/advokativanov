@@ -20,7 +20,7 @@ function startpage() {
             // checks if its the same on the address bar
             if (url == (this.href)) {
                 $(this).closest("li a").addClass("active");
-            } else if (url.endsWith("dismiss.html") || url.endsWith("future.html")) {
+            } else if (url.endsWith("dismiss.html") || url.endsWith("insurance.html")) {
                 $("#menu > li:nth-child(5)").addClass("active");
             }
         });

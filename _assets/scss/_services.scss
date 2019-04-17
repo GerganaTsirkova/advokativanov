@@ -11,6 +11,12 @@
     align-items: center;
     .heading {
         margin-bottom: $ws-most-used;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            margin-right: 1em;
+        }
     }
     hr {
         margin-bottom: $ws-most-used;

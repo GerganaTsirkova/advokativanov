@@ -16,8 +16,8 @@
         padding-top: $ws-most-used;
         .article-blog {
             background: #ffffff;
-            box-shadow: 0 0 0.5rem 0 rgba(black, 0.5);
-            padding: 2rem;
+            box-shadow: 0 0 1.5rem 0 rgba(black, 0.4);
+            padding: 2em 3em;
             >h3 {
                 margin: 0.5em 0 0.5em 0;
                 color: $items-color;
@@ -36,6 +36,10 @@
                     box-shadow: 0 0 0.5rem 0 rgba(black, 0.5);
                     background: $items-color;
                     padding: 0.5rem 1rem;
+                    &:hover,
+                    &:focus {
+                        background: $red;
+                    }
                 }
             }
             .img-post-container {

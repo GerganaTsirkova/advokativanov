@@ -30,6 +30,9 @@ hr.common-hr {
     hr.common-hr {
         width: 20%;
     }
+    body {
+        padding-top: 0;
+    }
 }
 
 @media only screen and (max-width:$tablets-s) {
@@ -38,6 +41,9 @@ hr.common-hr {
     body>footer.site-footer {
         width: 100vw;
         overflow: hidden;
+    }
+    body {
+        padding-top: 0;
     }
 }
 
