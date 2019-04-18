@@ -18,6 +18,10 @@
     }
     .consultation {
         width: 100%;
+        p.text {
+            text-indent: 5%;
+            line-height: 1.5;
+        }
         .button-main {
             display: flex;
             justify-content: center;
@@ -32,10 +36,6 @@
                     background: $red;
                 }
             }
-        }
-        p.text {
-            text-indent: 5%;
-            line-height: 1.5;
         }
     }
     .lawyers-job {
