@@ -1,25 +1,32 @@
-let gulp = require("gulp"),
-    autoprefixer = require("gulp-autoprefixer"),
-    exec = require("gulp-exec"),
-    browserSync = require('browser-sync').create(),
-    sass = require('gulp-sass'),
-    cp = require("child_process")
-    watch = require('gulp-watch');
+var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
+var $ = require('gulp-load-plugins')();
 
-gulp.task("scss", function() {
-    return gulp.src('_assets/scss/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer())
-        .pipe(gulp.dest('./docs/css/'))
+var path = {
+    SCSS_SRC: '._assets/scss/**/*.scss',
+    SCSS_DST: './css',
+    HTML_SRC: ['./css/*.css', './*.html', './_posts/*.*', './_layouts/*.*', './_includes/*.*'],
+};
+
+gulp.task('scss', function() {
+
+    gulp.src(path.SCSS_SRC)
+        .pipe($.sass())
+        .pipe($.autoprefixer({ browsers: ['last 2 versions'], cascade: false }))
+        .pipe($.size({ showFiles: true }))
+        .pipe($.csso())
+        .pipe($.size({ showFiles: true }))
+        .pipe($.sourcemaps.write('map'))
+        .pipe(gulp.dest(path.SCSS_DST))
         .pipe(browserSync.stream({ match: '**/*.css' }));
+
 });
 
-// Jekyll
-gulp.task("jekyll", function() {
-    return cp.spawn("bundle", ["exec", "jekyll", "build"], { stdio: "inherit", shell: true });
+gulp.task('jekyll', function() {
+    require('child_process').exec('bundle exec jekyll build --baseurl=', { stdio: 'inherit' });
 });
 
-gulp.task("watch", function() {
+gulp.task('serve', function() {
 
     browserSync.init({
         server: {
@@ -27,20 +34,10 @@ gulp.task("watch", function() {
         }
     });
 
-    gulp.watch('_assets/scss/**/*.scss', gulp.series('scss'));
-
-    gulp.watch(
-        [
-            "./*.html",
-            "./_includes/*.html",
-            "./_layouts/*.html",
-            "./_posts/**/*.*"
-        ]
-    ).on('change', gulp.series('jekyll', 'scss'));
-
-    gulp.watch('docs/**/*.html').on('change', browserSync.reload);
-    gulp.watch('docs/**/*.js').on('change', browserSync.reload);
+    gulp.watch(path.SCSS_SRC, ['scss', 'jekyll']);
+    gulp.watch(path.HTML_SRC, ['jekyll']);
+    gulp.watch(path.HTML_SRC).on('change', browserSync.reload);
 
 });
 
-gulp.task("default", gulp.series('jekyll', 'scss', 'watch'));
+gulp.task('default', ['scss', 'jekyll', 'serve']);
