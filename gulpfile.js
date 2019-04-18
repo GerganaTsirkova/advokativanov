@@ -3,7 +3,8 @@ let gulp = require("gulp"),
     exec = require("gulp-exec"),
     browserSync = require('browser-sync').create(),
     sass = require('gulp-sass'),
-    cp = require("child_process");
+    cp = require("child_process")
+    watch = require('gulp-watch');
 
 gulp.task("scss", function() {
     return gulp.src('_assets/scss/**/*.scss')

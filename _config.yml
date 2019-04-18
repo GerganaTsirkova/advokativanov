@@ -2,12 +2,12 @@ title: Lawyer Svetlomir Ivanov
 email: g_cirkova@mail.bg
 description: My first website after kdankov classes!
 destination: docs
-baseurl: "/lawyer-s-website"
-# baseurl: ""
+# baseurl: "/lawyer-s-website"
+baseurl: ""
 url: ""
 twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova
-
+incremental: true
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs]
 # Build settings
 markdown: kramdown
