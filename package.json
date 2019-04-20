@@ -19,27 +19,22 @@
         "url": "https://gerganatsirkova.github.io/lawyer-s-website/issues"
     },
     "homepage": "https://gerganatsirkova.github.io/lawyer-s-website/#readme",
-    "dependencies": {
-        "gulp": "^3.9.1",
-        "gulp-util": "^3.0.8"
-
-    },
     "devDependencies": {
-        "browser-sync": "",
+        "browser-sync": "^2.26.3",
         "csso": "",
-        "gulp": "",
-        "gulp-util": "",
-        "gulp-load-plugins": "",
-        "gulp-autoprefixer": "",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^6.1.0",
         "gulp-changed": "",
-        "gulp-csso": "",
+        "gulp-csso": "^3.0.1",
         "gulp-htmlmin": "",
         "gulp-inline-source": "",
+        "gulp-load-plugins": "^1.5.0",
         "gulp-notify": "",
         "gulp-plumber": "",
-        "gulp-sass": "",
-        "gulp-size": "",
-        "gulp-sourcemaps": ""
-
+        "gulp-sass": "^4.0.2",
+        "gulp-size": "^3.0.0",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-util": "^3.0.8",
+        "minimatch": "^3.0.2"
     }
 }
