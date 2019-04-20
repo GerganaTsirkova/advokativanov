@@ -7,7 +7,6 @@ baseurl: "/lawyer-s-website"
 url: ""
 twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova
-incremental: true
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs]
 # Build settings
 markdown: kramdown
