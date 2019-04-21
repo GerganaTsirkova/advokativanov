@@ -3,7 +3,7 @@ email: g_cirkova@mail.bg
 description: My first website after kdankov classes!
 destination: docs
 baseurl: "/lawyer-s-website"
-# baseurl: ""
+baseurl: ""
 url: ""
 twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova

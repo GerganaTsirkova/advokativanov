@@ -95,31 +95,20 @@ section.working-time {
 }
 
 fieldset {
-    width: 100%;
-}
-
-fieldset {
     border: none;
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-
-fieldset p {
-    margin-bottom: 0.5em;
-}
-
-fieldset .field-input {
-    margin-bottom: 1.5em;
-}
-
-fieldset p {
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-fieldset input {
-    padding: 0.3rem 1rem;
+    p {
+        margin-bottom: 0.5em;
+        width: 100%;
+    }
+    .field-input {
+        margin-bottom: 1.5em;
+    }
+    input {
+        padding: 0.3rem 1rem;
+    }
 }
 
 div.field-input {

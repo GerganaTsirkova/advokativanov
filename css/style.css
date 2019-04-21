@@ -1404,9 +1404,6 @@ section.working-time {
           flex-direction: column; }
 
 fieldset {
-  width: 100%; }
-
-fieldset {
   border: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1418,19 +1415,13 @@ fieldset {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%; }
-
-fieldset p {
-  margin-bottom: 0.5em; }
-
-fieldset .field-input {
-  margin-bottom: 1.5em; }
-
-fieldset p {
-  width: 100%;
-  margin-bottom: 1rem; }
-
-fieldset input {
-  padding: 0.3rem 1rem; }
+  fieldset p {
+    margin-bottom: 0.5em;
+    width: 100%; }
+  fieldset .field-input {
+    margin-bottom: 1.5em; }
+  fieldset input {
+    padding: 0.3rem 1rem; }
 
 div.field-input {
   -webkit-border-radius: 0.2rem;
