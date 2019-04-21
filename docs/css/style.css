@@ -871,7 +871,8 @@ input[type="submit"] {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      overflow: hidden; }
       .nav ul li a {
         display: block;
         width: 100%;
@@ -955,7 +956,8 @@ input[type="submit"] {
         -webkit-box-align: center;
         -webkit-align-items: center;
             -ms-flex-align: center;
-                align-items: center; }
+                align-items: center;
+        overflow: hidden; }
         header .nav ul li a {
           display: block;
           width: 100%;
@@ -970,8 +972,10 @@ input[type="submit"] {
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
   body {
     font: inherit; }
-  #menu li a {
-    padding: 1.5rem; } }
+  #menu li {
+    overflow: hidden; }
+    #menu li a {
+      padding: 1.5rem; } }
 
 .site-footer {
   display: -webkit-box;

@@ -170,6 +170,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                overflow: hidden;
                 a {
                     display: block;
                     width: 100%;
@@ -235,6 +236,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    overflow: hidden;
                     a {
                         display: block;
                         width: 100%;
@@ -261,6 +263,7 @@
     }
     #menu {
         li {
+            overflow: hidden;
             a {
                 padding: 1.5rem;
             }
