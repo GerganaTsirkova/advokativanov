@@ -2,6 +2,7 @@
     padding: 0 $ws-most-used $ws-most-used $ws-most-used;
     line-height: 1.5;
     text-indent: 5%;
+    overflow: hidden;
     .article-part {
         margin: 1em auto;
     }
@@ -37,6 +38,11 @@
         text-indent: 5%;
         line-height: 1.5;
     }
+    .button-blog {
+        a {
+            display: block;
+        }
+    }
 }
 
 @media only screen and (max-width:$phones-l) {
@@ -47,6 +53,13 @@
             height: auto;
         }
     }
+    .button-blog {
+        a {
+            display: block;
+            width: 100%;
+            padding: 1em;
+        }
+    }
 }
 
 @media only screen and (max-width:$tablets-m) {
@@ -54,5 +67,8 @@
         >.featimg-post {
             margin: 0 2rem 2rem 0;
         }
+    }
+    .article-button {
+        width: 100%;
     }
 }

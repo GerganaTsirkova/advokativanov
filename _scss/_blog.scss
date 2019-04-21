@@ -30,6 +30,7 @@
             }
             .post-partly-content {
                 text-indent: 5%;
+                line-height: 1.5;
                 margin-bottom: $ws-most-used;
                 p {
                     text-indent: 5%;
@@ -87,6 +88,7 @@
         padding: 3em 2em;
     }
     .button-blog {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;

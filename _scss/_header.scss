@@ -166,7 +166,7 @@
             li {
                 text-align: center;
                 width: 100vw;
-                border-bottom: 0.5px dotted font-color-dark;
+                border-bottom: 0.5px dotted $font-color-dark;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -232,7 +232,7 @@
                 li {
                     text-align: center;
                     width: 100vw;
-                    border-bottom: 0.5px dotted font-color-dark;
+                    border-bottom: 0.5px dotted $font-color-dark;
                     display: flex;
                     justify-content: center;
                     align-items: center;
