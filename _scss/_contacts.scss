@@ -52,6 +52,7 @@ input,
 .contacts-container>section:nth-child(3) {
     margin: 3em 2em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -68,6 +69,10 @@ textarea,
 label {
     font: 18px/1.5/'Lato', sans-serif;
     overflow: hidden;
+}
+
+.form-container {
+    display: flex;
 }
 
 .contacts-text>p {
@@ -268,66 +273,46 @@ input[type="submit"]:focus {
 @media only screen and (max-width:330px) {
     .contacts-container {
         padding: 3rem 1rem;
-        .form-container {
-            margin-right: 2rem;
-            margin-left: 2rem;
-            flex-direction: column;
-            form {
-                margin-bottom: 3rem;
-                justify-content: space-between;
-                width: 100%;
-            }
-            .working-time {
-                width: 100%;
-            }
-        }
     }
-    .date-hours {
+    .form-container {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        display: flex;
         flex-direction: column;
     }
-}
-
-@media only screen and (min-width:$phones-l) {
-    .contacts-container {
-        padding: 3rem 1rem;
-        .form-container {
-            margin-right: 2rem;
-            margin-left: 2rem;
-            flex-direction: column;
-            form {
-                margin-bottom: 3rem;
-                justify-content: space-between;
-                width: 100%;
-            }
-            .working-time {
-                width: 100%;
-            }
-        }
+    form {
+        margin-bottom: 3rem;
+        flex: 0 0 100%;
     }
-    .contacts-text {
-        display: block;
+    .working-time {
+        flex: 0 0 100%;
+    }
+    .date-hours {
+        display: flex;
+        flex-direction: column;
+    }
+    #nav {
+        height: auto;
     }
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:840px) {
     body {
         padding-top: 0;
     }
-    .contacts-container {
-        .form-container {
-            margin-right: 2rem;
-            margin-left: 2rem;
-            display: flex;
-            flex-direction: column;
-            form {
-                margin-bottom: 3rem;
-                justify-content: space-between;
-                width: 100%;
-            }
-            .working-time {
-                width: 100%;
-            }
-        }
+    .form-container {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+        margin-bottom: 3rem;
+        display: block;
+        flex: 1 0 100%;
+    }
+    .working-time {
+        flex: 1 0 100%;
     }
     #nav {
         height: auto;
