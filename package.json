@@ -1,40 +1,31 @@
 {
-    "name": "website",
-    "version": "1.0.0",
-    "description": "Jekyll theme by the best HTML & CSS Course",
-    "main": "gulpfile.js",
-    "directories": {
-        "doc": "docs"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://gerganatsirkova.github.io/lawyer-s-website/.git"
-    },
-    "author": "Gergana",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://gerganatsirkova.github.io/lawyer-s-website/issues"
-    },
-    "homepage": "https://gerganatsirkova.github.io/lawyer-s-website/#readme",
-    "devDependencies": {
-        "browser-sync": "^2.26.3",
-        "csso": "",
-        "gulp": "^3.9.1",
-        "gulp-autoprefixer": "^6.1.0",
-        "gulp-changed": "",
-        "gulp-csso": "^3.0.1",
-        "gulp-htmlmin": "",
-        "gulp-inline-source": "",
-        "gulp-load-plugins": "^1.5.0",
-        "gulp-notify": "",
-        "gulp-plumber": "",
-        "gulp-sass": "^4.0.2",
-        "gulp-size": "^3.0.0",
-        "gulp-sourcemaps": "^2.6.5",
-        "gulp-util": "^3.0.8",
-        "minimatch": "^3.0.2"
-    }
+  "name": "gleesik-jsk",
+  "version": "1.5.1",
+  "description": "A project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Costrășel",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "browser-sync": "^2.18.13",
+    "gulp-autoprefixer": "^4.0.0"
+  },
+  "repository": {
+    "type": "template",
+    "url": "https://gleesik.ro/"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ],
+  "bugs": {
+    "url": "https://gleesik.ro/"
+  },
+  "homepage": "https://gleesik.ro/"
 }
