@@ -1443,19 +1443,17 @@ div.field-input {
           align-items: baseline;
   border: 1px solid #120807;
   margin-bottom: 1rem; }
-
-div.field-input i {
-  margin: 0 0.5rem; }
-
-div.field-input input {
-  padding-right: 1.5rem;
-  border: none;
-  outline: none;
-  border-left: 1px solid #120807;
-  border-top: transparent;
-  border-bottom: transparent;
-  width: 100%;
-  padding-left: 0.5em; }
+  div.field-input i {
+    margin: 0 0.5rem; }
+  div.field-input input {
+    padding-right: 1.5rem;
+    border: none;
+    outline: none;
+    border-left: 1px solid #120807;
+    border-top: transparent;
+    border-bottom: transparent;
+    width: 100%;
+    padding-left: 0.5em; }
 
 .contacts-container hr {
   border: 2px solid #8B0000;
@@ -1487,9 +1485,6 @@ div.field-input input {
 .contacts-container .contacts-text hr {
   width: 10%; }
 
-.working-time > h3 {
-  margin: 0 auto 1.5em auto; }
-
 form div.heading {
   margin: 0 auto 1.5em auto;
   display: -webkit-box;
@@ -1518,6 +1513,9 @@ form div.heading {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.working-time > h3 {
+  margin: 0 auto 1.5em auto; }
 
 .working-time span:first-child {
   font-weight: bold; }
@@ -1598,11 +1596,10 @@ input[type="submit"]:focus {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1em; }
-
-.or i {
-  color: #120807;
-  margin-top: 2rem;
-  font-size: 2em; }
+  .or i {
+    color: #120807;
+    margin-top: 2rem;
+    font-size: 2em; }
 
 @media only screen and (max-width: 330px) {
   .contacts-container {

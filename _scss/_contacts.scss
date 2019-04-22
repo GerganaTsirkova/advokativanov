@@ -120,21 +120,19 @@ div.field-input {
     align-items: baseline;
     border: 1px solid $frame-color-dark;
     margin-bottom: 1rem;
-}
-
-div.field-input i {
-    margin: 0 0.5rem;
-}
-
-div.field-input input {
-    padding-right: 1.5rem;
-    border: none;
-    outline: none;
-    border-left: 1px solid $frame-color-dark;
-    border-top: transparent;
-    border-bottom: transparent;
-    width: 100%;
-    padding-left: 0.5em;
+    i {
+        margin: 0 0.5rem;
+    }
+    input {
+        padding-right: 1.5rem;
+        border: none;
+        outline: none;
+        border-left: 1px solid $frame-color-dark;
+        border-top: transparent;
+        border-bottom: transparent;
+        width: 100%;
+        padding-left: 0.5em;
+    }
 }
 
 .contacts-container hr {
@@ -152,13 +150,11 @@ div.field-input input {
     align-items: center;
 }
 
-.contacts-container .contacts hr,
-.contacts-container .contacts-text hr {
-    width: 10%;
-}
-
-.working-time>h3 {
-    margin: 0 auto 1.5em auto;
+.contacts-container {
+    .contacts hr,
+    .contacts-text hr {
+        width: 10%;
+    }
 }
 
 form div.heading {
@@ -168,11 +164,16 @@ form div.heading {
     justify-content: center;
 }
 
-.working-time>.date-hours {
-    border-bottom: 1px solid $frame-color-dark;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.working-time {
+    >.date-hours {
+        border-bottom: 1px solid $frame-color-dark;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    >h3 {
+        margin: 0 auto 1.5em auto;
+    }
 }
 
 .working-time span:first-child {
@@ -251,12 +252,11 @@ input[type="submit"]:focus {
     justify-content: center;
     align-items: center;
     font-size: 1em;
-}
-
-.or i {
-    color: $frame-color-dark;
-    margin-top: 2rem;
-    font-size: 2em;
+    i {
+        color: $frame-color-dark;
+        margin-top: 2rem;
+        font-size: 2em;
+    }
 }
 
 @media only screen and (max-width:330px) {
