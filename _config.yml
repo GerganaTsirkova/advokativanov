@@ -12,3 +12,4 @@ exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.jso
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
