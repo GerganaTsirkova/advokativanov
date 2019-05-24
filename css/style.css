@@ -733,6 +733,9 @@ input[type="submit"] {
   .top .right .content-phone p:first-child {
     color: #25100e;
     margin-bottom: 0.1em; }
+  .top .right .content-phone p a {
+    text-decoration: none;
+    color: #f7f1ee; }
 
 .nav {
   overflow: hidden;
@@ -1035,8 +1038,15 @@ input[type="submit"] {
       margin-right: 2em; }
     .site-footer > .main-footer .location {
       margin-left: 3em; }
+      .site-footer > .main-footer .location .text-location p a {
+        text-decoration: none;
+        color: #e3b9b5; }
     .site-footer > .main-footer .follow-me {
       margin-right: 3em; }
+      .site-footer > .main-footer .follow-me .first-link {
+        margin-top: 1em; }
+      .site-footer > .main-footer .follow-me .last-link {
+        margin-bottom: 1em; }
 
 .main-footer ul li:first-child {
   margin-top: 2em; }
@@ -1524,6 +1534,8 @@ form div.heading {
   margin: 1.8em 1em 1.8em 0; }
 
 form > fieldset > p:nth-child(13) > textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   margin-bottom: 0.5em;
   margin-top: 2rem;
@@ -1537,7 +1549,7 @@ form > fieldset > p:nth-child(13) > textarea {
   resize: none;
   font: inherit;
   overflow: hidden;
-  padding-top: 0.5rem; }
+  padding: 0.5rem; }
 
 form > fieldset > p:nth-child(13) > textarea:hover,
 form > fieldset > p:nth-child(13) > textarea:focus {
@@ -1872,3 +1884,17 @@ input[type="submit"]:focus {
     font-size: 2em; }
   .error-page-content .error-page-content a {
     margin-bottom: 2em; }
+
+.privacy-policy,
+.general-items {
+  padding: 3em; }
+  .privacy-policy h3,
+  .privacy-policy h6,
+  .general-items h3,
+  .general-items h6 {
+    text-align: center;
+    margin-bottom: 2em; }
+  .privacy-policy > p,
+  .general-items > p {
+    text-indent: 5%;
+    margin-bottom: 1em; }

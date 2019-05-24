@@ -185,6 +185,7 @@ form div.heading {
 }
 
 form>fieldset>p:nth-child(13)>textarea {
+    box-sizing: border-box;
     width: 100%;
     margin-bottom: 0.5em;
     margin-top: 2rem;
@@ -198,7 +199,7 @@ form>fieldset>p:nth-child(13)>textarea {
     resize: none;
     font: inherit;
     overflow: hidden;
-    padding-top: 0.5rem;
+    padding: 0.5rem;
 }
 
 form>fieldset>p:nth-child(13)>textarea:hover,

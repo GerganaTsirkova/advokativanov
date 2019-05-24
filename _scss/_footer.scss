@@ -34,9 +34,19 @@
         }
         .location {
             margin-left: 3em;
+            .text-location p a {
+                text-decoration: none;
+                color: $font-color-dark;
+            }
         }
         .follow-me {
             margin-right: 3em;
+            .first-link {
+                margin-top: 1em;
+            }
+            .last-link {
+                margin-bottom: 1em;
+            }
         }
     }
 }
