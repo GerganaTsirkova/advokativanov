@@ -1,0 +1,14 @@
+.site-image-container-first,
+.site-image-container-other {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.site-image-container-first {
+    height: 28em;
+}
+
+.site-image-container-other {
+    height: 19em;
+}

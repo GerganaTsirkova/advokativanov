@@ -1,0 +1,77 @@
+.subscribe-info {
+    background: #F7F1EE;
+    color: $frame-color-dark;
+    padding: 0 5rem 3rem 5rem;
+    text-align: center;
+    text-indent: 5%;
+    line-height: 1.5;
+    >.heading {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        margin-bottom: $ws-most-used;
+        i {
+            margin-right: 1em;
+            font-size: 1.5em;
+            align-self: center;
+        }
+        .subscribe-h4 {
+            width: 100%;
+        }
+    }
+    p {
+        text-indent: 5%;
+        line-height: 1.5;
+    }
+    .image-container-subscription {
+        margin: 3em auto;
+        overflow: hidden;
+        position: relative;
+        &::before {
+            display: block;
+            content: '';
+            padding-top: 56.25%;
+        }
+        .image-subscription {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+        }
+    }
+    ul {
+        text-indent: 0;
+        list-style-type: none;
+        text-align: left;
+        li {
+            text-indent: 0;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            margin-bottom: 2em;
+            i {
+                margin-right: 1rem;
+                font-size: 1.2em;
+                color: $contrast-color;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:$phones-l) {
+    .subscribe-info {
+        padding: 3rem 1rem;
+        .image-container-subscription {
+            height: 35vh;
+        }
+    }
+}
+
+@media only screen and (max-width:1040px) {
+    .image-container-subscription {
+        height: 45vw;
+    }
+}

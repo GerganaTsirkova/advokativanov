@@ -1,0 +1,114 @@
+/* section advert */
+
+.advert {
+    background-color: $font-color-light;
+    padding: 1em 3em 3em 3em;
+    color: $frame-color-dark;
+    display: flex;
+    flex-direction: column;
+    p.text {
+        text-indent: 5%;
+        line-height: 1.5;
+    }
+    .advert-heading {
+        text-align: center;
+        h6 {
+            margin-bottom: $ws-most-used;
+        }
+    }
+    .consultation {
+        width: 100%;
+        .button-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: $ws-most-used;
+            a {
+                background: $items-color;
+                color: $font-color-light;
+                padding: 0.5em;
+                &.button:hover,
+                &.button:focus {
+                    background: $red;
+                }
+            }
+        }
+    }
+    .lawyers-job {
+        display: block;
+        margin: 0 0 3em 0;
+        p.text {
+            text-indent: 5%;
+            line-height: 1.5;
+        }
+        .lawyers-job-info {
+            h6 {
+                margin: 0 auto;
+                margin-bottom: $ws-most-used;
+            }
+            .advert-main-text {
+                display: flex;
+                align-items: center;
+                ul {
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 1em;
+                        i {
+                            color: $frame-color-dark;
+                            margin-right: 1em;
+                        }
+                    }
+                }
+            }
+            p.text {
+                text-indent: 5%;
+                line-height: 1.5;
+            }
+        }
+        .image-first-page {
+            height: 300px;
+            width: 200px;
+            overflow: hidden;
+            position: relative;
+            margin: 0 2em;
+            &:before {
+                display: block;
+                content: "";
+                padding-top: 25%;
+            }
+            img {
+                width: auto;
+                height: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:$phones-l) {
+    //800
+    .button-main {
+        margin-top: 2em;
+    }
+    .lawyers-job-info {
+        .advert-main-text {
+            flex-direction: column;
+            .image-first-page {
+                margin: 0 auto 2em auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:$phones-l) {
+    //800
+    .lawyers-job-info {
+        .advert-main-text {
+            flex-direction: row;
+        }
+    }
+}
