@@ -7,7 +7,7 @@ destination: docs
 url: "https://advokativanov.eu"
 twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova
-exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs]
+exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs,LICENCE.txt, LICENCE-images.txt]
 # Build settings
 markdown: kramdown
 plugins:
