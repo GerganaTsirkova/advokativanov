@@ -1,1 +1,1 @@
-Sitemap: http://advokativanov.eu/sitemap.xml
+Sitemap: https://advokativanov.eu/sitemap.xml

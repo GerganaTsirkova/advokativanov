@@ -1,29 +1,32 @@
 {
-    "name": "my-first-website",
-    "version": "1.5.1",
-    "description": "My first website after KDankov classes",
+    "name": "hyde",
+    "version": "1.0.0",
+    "description": "Jekyll theme by the best HTML & CSS Course",
     "main": "gulpfile.js",
+    "directories": {
+        "doc": "docs"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Gergana Tsirkova",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kdankov/su-fe2-hyde.git"
+    },
+    "author": "",
     "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kdankov/su-fe2-hyde/issues"
+    },
+    "homepage": "https://github.com/kdankov/su-fe2-hyde#readme",
     "devDependencies": {
         "browser-sync": "^2.26.5",
-        "gulp": "^3.9.1",
-        "gulp-autoprefixer": "^4.0.0",
-        "gulp-sass": "^3.1.0",
+        "child_process": "^1.0.2",
+        "gulp": "^4.0.0",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-exec": "^3.0.2",
+        "gulp-sass": "^4.0.2",
         "node-sass": "^4.12.0",
         "tar": ">=4.4.2"
-    },
-    "repository": {
-        "type": "website",
-        "url": "https://gerganatsirkova.github.io/lawyer-s-website/"
-    },
-    "keywords": [
-        "jekyll",
-        "gulp",
-        "sass",
-        "browsersync"
-    ]
+    }
 }

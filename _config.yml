@@ -1,13 +1,13 @@
-title: Адвокат Светломир Иванов
+title: Адвокат Светломир Иванов гр.Русе
 email: g_cirkova@mail.bg
 description: Website of lawyer Svetlomir Ivanov!
 destination: docs
 # baseurl: "/lawyer-s-website"
 # baseurl: ""
-url: "http://advokativanov.eu"
+url: "https://advokativanov.eu"
 twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova
-exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs]
+exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs,LICENCE.txt, LICENCE-images.txt]
 # Build settings
 markdown: kramdown
 plugins:
