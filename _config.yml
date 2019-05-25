@@ -4,7 +4,7 @@ description: Website of lawyer Svetlomir Ivanov!
 destination: docs
 # baseurl: "/lawyer-s-website"
 # baseurl: ""
-url: "http://advokativanov.eu"
+url: "https://advokativanov.eu"
 twitter_username: GerganaTsirkova
 github_username: GerganaTsirkova
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs]
