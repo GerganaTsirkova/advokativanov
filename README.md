@@ -1,6 +1,4 @@
-# GerganaTsirkova.github.io
+www.advokativanov.eu
 
-Website for lawyer
-
- https://gerganatsirkova.github.io/lawyer-s-website/
+Website of Lawyer Svetlomir Ivanov
 
