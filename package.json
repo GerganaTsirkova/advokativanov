@@ -1,7 +1,7 @@
 {
-    "name": "hyde",
+    "name": "advokativanov",
     "version": "1.0.0",
-    "description": "Jekyll theme by the best HTML & CSS Course",
+    "description": "Lawyers website",
     "main": "gulpfile.js",
     "directories": {
         "doc": "docs"
@@ -11,14 +11,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/kdankov/su-fe2-hyde.git"
+        "url": "git+https://github.com/GerganaTsirkova/advokativanov.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/kdankov/su-fe2-hyde/issues"
+        "url": "https://github.com/GerganaTsirkova/advokativanov/issues"
     },
-    "homepage": "https://github.com/kdankov/su-fe2-hyde#readme",
+    "homepage": "https://github.com/GerganaTsirkova/advokativanov#readme",
     "devDependencies": {
         "browser-sync": "^2.26.7",
         "child_process": "^1.0.2",
