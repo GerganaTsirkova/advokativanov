@@ -184,7 +184,7 @@ form div.heading {
     margin: 1.8em 1em 1.8em 0;
 }
 
-form>fieldset>p:nth-child(13)>textarea {
+form>fieldset textarea {
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 0.5em;
@@ -202,8 +202,8 @@ form>fieldset>p:nth-child(13)>textarea {
     padding: 0.5rem;
 }
 
-form>fieldset>p:nth-child(13)>textarea:hover,
-form>fieldset>p:nth-child(13)>textarea:focus {
+form>fieldset textarea:hover,
+form>fieldset textarea:focus {
     border: 1px solid $red;
 }
 
@@ -306,5 +306,19 @@ input[type="submit"]:focus {
     }
     #nav {
         height: auto;
+    }
+}
+
+.honeypot-field {
+    display: none;
+}
+
+.thankyou_message {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h6 {
+        text-align: center;
     }
 }
