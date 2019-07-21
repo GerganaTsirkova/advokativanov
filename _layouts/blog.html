@@ -23,13 +23,13 @@
                     <p>Автор - Светломир Иванов</p>
                     {% if post.featimg %}
                     <div class="img-post-container">
-                        <img class="featimg" src="{{ site.baseurl }}{{ post.featimg }}" alt="{{ post.featimg }}">
+                        <img class="featimg" src="{{ site.url }}{{ post.featimg }}" alt="{{ post.featimg }}">
                     </div> {% endif %}
                     <div class="post-partly-content" style="text-indent:5%; line-height: 1.5">
                         {{ post.excerpt | truncate: 400 }}
                     </div>
                     <div class="button-blog">
-                        <a href="{{ site.baseurl }}{{ post.url }}" class="button">Прочети статията</a>
+                        <a href="{{ site.url }}{{ post.url }}" class="button">Прочети статията</a>
                     </div>
                 </article>
                 <hr class="common-hr"> {% endfor %}
