@@ -175,7 +175,9 @@
                 align-items: center;
                 overflow: hidden;
                 a {
-                    display: block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 100%;
                     outline: none;
                     padding: 1rem;
@@ -241,7 +243,9 @@
                     align-items: center;
                     overflow: hidden;
                     a {
-                        display: block;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         width: 100%;
                         outline: none;
                         padding: 1rem;
@@ -269,6 +273,9 @@
             overflow: hidden;
             a {
                 padding: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }

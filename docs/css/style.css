@@ -659,7 +659,9 @@ input[type="submit"] {
       align-items: center;
       overflow: hidden; }
       .nav ul li a {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         outline: none;
         padding: 1rem;
@@ -708,7 +710,9 @@ input[type="submit"] {
         align-items: center;
         overflow: hidden; }
         header .nav ul li a {
-          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 100%;
           outline: none;
           padding: 1rem;
@@ -724,7 +728,10 @@ input[type="submit"] {
   #menu li {
     overflow: hidden; }
     #menu li a {
-      padding: 1.5rem; } }
+      padding: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
 
 .site-footer {
   display: flex;
