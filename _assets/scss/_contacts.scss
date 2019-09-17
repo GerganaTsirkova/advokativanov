@@ -135,24 +135,19 @@ div.field-input {
     }
 }
 
-.contacts-container .common-hr {
-    width: 20%;
-    margin: 0 auto;
-    outline: none;
-    margin-bottom: 2.5em;
-}
-
 .contacts-container .contacts {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.contacts-container {
-    .contacts .common-hr,
-    .contacts-text .common-hr {
+    .common-hr {
         width: 10%;
+        margin: 0 auto;
+        margin-bottom: 2.5em;
+        height: 3px;
+        border-radius: 0.5rem;
+        outline: none;
+        background: #8B0000;
     }
 }
 

@@ -154,7 +154,8 @@ input[type="submit"] {
   background: #954037;
   padding: 0.5rem 1rem;
   margin: 2em auto 0 auto;
-  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
+  box-sizing: border-box; }
   @media screen and (min-width: 600px) {
     .article-button {
       width: 20%; } }
@@ -162,6 +163,7 @@ input[type="submit"] {
     background: #8B0000; }
 
 .button-blog a {
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1031,21 +1033,19 @@ div.field-input {
     width: 100%;
     padding-left: 0.5em; }
 
-.contacts-container .common-hr {
-  width: 20%;
-  margin: 0 auto;
-  outline: none;
-  margin-bottom: 2.5em; }
-
 .contacts-container .contacts {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-.contacts-container .contacts .common-hr,
-.contacts-container .contacts-text .common-hr {
-  width: 10%; }
+  .contacts-container .contacts .common-hr {
+    width: 10%;
+    margin: 0 auto;
+    margin-bottom: 2.5em;
+    height: 3px;
+    border-radius: 0.5rem;
+    outline: none;
+    background: #8B0000; }
 
 form div.heading {
   margin: 0 auto 1.5em auto;
@@ -1180,7 +1180,6 @@ input[type="submit"]:focus {
 .single-article {
   padding: 0 2.5em 2.5em 2.5em;
   line-height: 1.5;
-  text-indent: 5%;
   overflow: hidden; }
   .single-article .article-part {
     margin: 1em auto; }
