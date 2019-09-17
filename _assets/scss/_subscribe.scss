@@ -4,6 +4,12 @@
     padding: 0 3rem 3rem 3rem;
     text-indent: 5%;
     line-height: 1.5;
+    @media only screen and (max-width: $phones-l) {
+        text-align: justify;
+    }
+    @media only screen and (min-width: $phones-l) {
+        text-align: center;
+    }
     >.heading {
         width: 100%;
         display: flex;
@@ -28,6 +34,12 @@
         margin: 3em auto;
         overflow: hidden;
         position: relative;
+        @media only screen and (max-width: $phones-l) {
+            height: 35vh;
+        }
+        @media only screen and (max-width:1040px) {
+            height: 45vw;
+        }
         &::before {
             display: block;
             content: '';
@@ -57,27 +69,5 @@
                 color: $contrast-color;
             }
         }
-    }
-}
-
-@media only screen and (max-width:$phones-l) {
-    .subscribe-info {
-        text-align: justify;
-        padding: 3rem;
-        .image-container-subscription {
-            height: 35vh;
-        }
-    }
-}
-
-@media only screen and (max-width:1040px) {
-    .image-container-subscription {
-        height: 45vw;
-    }
-}
-
-@media only screen and (max-width:1040px) {
-    .subscribe-info {
-        text-align: center;
     }
 }
