@@ -84,12 +84,14 @@
             justify-content: center;
             align-items: center;
             overflow: hidden;
+            box-sizing: border-box;
         }
         a {
             height: 100%;
             padding: 1.7rem;
             color: $font-color-light;
             text-decoration: none;
+            box-sizing: border-box;
             &:hover,
             &:focus {
                 background: $items-color;

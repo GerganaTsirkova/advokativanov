@@ -590,12 +590,14 @@ input[type="submit"] {
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden; }
+      overflow: hidden;
+      box-sizing: border-box; }
     .nav ul a {
       height: 100%;
       padding: 1.7rem;
       color: #f7f1ee;
-      text-decoration: none; }
+      text-decoration: none;
+      box-sizing: border-box; }
       .nav ul a:hover, .nav ul a:focus {
         background: #954037; }
 
