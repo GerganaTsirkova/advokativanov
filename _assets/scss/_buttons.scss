@@ -9,20 +9,25 @@ input[type="submit"] {
     cursor: pointer;
     color: $font-color-light;
     text-align: center;
-}
-
-@media (max-width:$phones-m) {
-    button,
-    .button,
-    input[type="submit"] {
+    @media (max-width: $phones-m) {
         width: 100%;
+    }
+    @media (max-width:$tablets-xs) {
+        padding: 1.5rem, 1.5rem;
     }
 }
 
-@media (max-width:$tablets-xs) {
-    button,
-    .button,
-    input[type="submit"] {
-        padding: 1.5rem, 1.5rem;
+.article-button {
+    width: 20%;
+    background: $items-color;
+    padding: 0.5rem 1rem;
+    margin: 2em auto 0 auto;
+    box-shadow: 0 0 0.5rem 0 rgba(black, 0.5);
+    @media screen and(max-width: 600px) {
+        width: 100%;
+    }
+    &:hover,
+    &:focus {
+        background: $red;
     }
 }

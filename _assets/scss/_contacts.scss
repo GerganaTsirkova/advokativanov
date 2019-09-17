@@ -135,8 +135,7 @@ div.field-input {
     }
 }
 
-.contacts-container hr {
-    border: 3px solid $red;
+.contacts-container .common-hr {
     width: 20%;
     margin: 0 auto;
     outline: none;
@@ -151,8 +150,8 @@ div.field-input {
 }
 
 .contacts-container {
-    .contacts hr,
-    .contacts-text hr {
+    .contacts .common-hr,
+    .contacts-text .common-hr {
         width: 10%;
     }
 }

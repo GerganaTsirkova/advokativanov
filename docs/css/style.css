@@ -138,18 +138,28 @@ input[type="submit"] {
   cursor: pointer;
   color: #f7f1ee;
   text-align: center; }
+  @media (max-width: 700px) {
+    button,
+    .button,
+    input[type="submit"] {
+      width: 100%; } }
+  @media (max-width: 1024px) {
+    button,
+    .button,
+    input[type="submit"] {
+      padding: 1.5rem, 1.5rem; } }
 
-@media (max-width: 700px) {
-  button,
-  .button,
-  input[type="submit"] {
-    width: 100%; } }
-
-@media (max-width: 1024px) {
-  button,
-  .button,
-  input[type="submit"] {
-    padding: 1.5rem, 1.5rem; } }
+.article-button {
+  width: 20%;
+  background: #954037;
+  padding: 0.5rem 1rem;
+  margin: 2em auto 0 auto;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5); }
+  @media screen and (max-width: 600px) {
+    .article-button {
+      width: 100%; } }
+  .article-button:hover, .article-button:focus {
+    background: #8B0000; }
 
 /* section advert */
 .advert {
@@ -1007,8 +1017,7 @@ div.field-input {
     width: 100%;
     padding-left: 0.5em; }
 
-.contacts-container hr {
-  border: 3px solid #8B0000;
+.contacts-container .common-hr {
   width: 20%;
   margin: 0 auto;
   outline: none;
@@ -1020,8 +1029,8 @@ div.field-input {
   justify-content: center;
   align-items: center; }
 
-.contacts-container .contacts hr,
-.contacts-container .contacts-text hr {
+.contacts-container .contacts .common-hr,
+.contacts-container .contacts-text .common-hr {
   width: 10%; }
 
 form div.heading {
@@ -1173,14 +1182,6 @@ input[type="submit"]:focus {
     text-align: right;
     margin: 1.5em 0;
     font-style: italic; }
-  .single-article .article-button {
-    width: 20%;
-    background: #954037;
-    padding: 0.5rem 1rem;
-    margin: 2em auto 0 auto;
-    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5); }
-    .single-article .article-button:hover, .single-article .article-button:focus {
-      background: #8B0000; }
   .single-article .blog-heading {
     margin: 2.5em auto; }
   .single-article p.text {
@@ -1237,8 +1238,10 @@ input[type="submit"]:focus {
       background: #ffffff;
       box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.4);
       padding: 2em 3em;
-      line-height: 1.5;
-      text-indent: 5%; }
+      line-height: 1.5; }
+      @media screen and (max-width: 600px) {
+        .articles-container-outer .articles-container-inner .article-blog .img-post-container, .articles-container-outer .articles-container-inner .article-blog .button-blog > a {
+          width: 100%; } }
       .articles-container-outer .articles-container-inner .article-blog > h3 {
         margin: 0.5em 0 0.5em 0;
         color: #954037; }

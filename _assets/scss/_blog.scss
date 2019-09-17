@@ -18,7 +18,11 @@
             box-shadow: 0 0 1.5rem 0 rgba(black, 0.4);
             padding: 2em 3em;
             line-height: 1.5;
-            text-indent: 5%;
+            @media screen and(max-width: 600px) {
+                .img-post-container, .button-blog > a {
+                    width: 100%;
+                }
+            }
             >h3 {
                 margin: 0.5em 0 0.5em 0;
                 color: $items-color;
