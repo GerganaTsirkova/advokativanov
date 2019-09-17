@@ -1,8 +1,7 @@
 .subscribe-info {
     background: #F7F1EE;
     color: $frame-color-dark;
-    padding: 0 5rem 3rem 5rem;
-    text-align: center;
+    padding: 0 3rem 3rem 3rem;
     text-indent: 5%;
     line-height: 1.5;
     >.heading {
@@ -63,7 +62,8 @@
 
 @media only screen and (max-width:$phones-l) {
     .subscribe-info {
-        padding: 3rem 1rem;
+        text-align: justify;
+        padding: 3rem;
         .image-container-subscription {
             height: 35vh;
         }
@@ -73,5 +73,11 @@
 @media only screen and (max-width:1040px) {
     .image-container-subscription {
         height: 45vw;
+    }
+}
+
+@media only screen and (max-width:1040px) {
+    .subscribe-info {
+        text-align: center;
     }
 }

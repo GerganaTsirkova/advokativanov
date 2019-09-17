@@ -27,30 +27,29 @@ input,
 .contacts-container {
     width: 100%;
     background: $font-color-light;
-    padding: 2.5em 0;
+    padding: 3rem;
+    overflow: hidden;
 }
 
 .contacts-container .contacts ul {
     list-style-type: none;
     margin-top: 2em;
-}
-
-.contacts-container .contacts li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2em;
-}
-
-.contacts-container .contacts li i {
-    margin-right: 1em;
-    font-size: 1.5em;
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        i {
+            margin-right: 1em;
+            font-size: 1.5em;
+        }
+    }
 }
 
 
 /* form container */
 
 .contacts-container>section:nth-child(3) {
-    margin: 3rem;
+    margin: 3rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -58,7 +57,7 @@ input,
 
 .contacts-text {
     color: $frame-color-dark;
-    padding: 3rem;
+    padding: 3rem 0;
     line-height: 1.5;
     text-indent: 5%;
 }
@@ -168,14 +167,12 @@ form div.heading {
     >h3 {
         margin: 0 auto 1.5em auto;
     }
-}
-
-.working-time span:first-child {
-    font-weight: bold;
-}
-
-.working-time span {
-    margin: 1.8em 1em 1.8em 0;
+    span {
+        margin: 1.8em 1em 1.8em 0;
+    }
+    span:first-child {
+        font-weight: bold;
+    }
 }
 
 form>fieldset textarea {
@@ -259,8 +256,6 @@ input[type="submit"]:focus {
         padding: 3rem 1rem;
     }
     .form-container {
-        margin-right: 2rem;
-        margin-left: 2rem;
         display: flex;
         flex-direction: column;
     }
@@ -285,8 +280,6 @@ input[type="submit"]:focus {
         padding-top: 0;
     }
     .form-container {
-        margin-right: 2rem;
-        margin-left: 2rem;
         display: flex;
         flex-direction: column;
     }

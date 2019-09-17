@@ -2,6 +2,7 @@
     background: $font-color-light;
     padding: 3em;
     color: $frame-color-dark;
+    overflow: hidden;
     h3 {
         color: $items-color;
     }
@@ -31,6 +32,7 @@
         line-height: 1.5;
         box-shadow: 0 0 0.3rem 0 rgba(black, 0.5);
         outline: none;
+        box-sizing: border-box;
         &:hover,
         &:focus {
             background: $red;
