@@ -22,18 +22,18 @@ main.site-content {
     color: $frame-color-dark;
 }
 
-hr.common-hr {
+div.common-hr {
     width: 10%;
     margin: 2.5em;
-    border: 3px solid $red;
+    height: 3px;
     border-radius: 0.5rem;
     margin: 2.5em auto;
     outline: none;
-    color: #8B0000;
+    background: #8B0000;
 }
 
 @media only screen and (max-width:$phones-m) {
-    hr.common-hr {
+    .common-hr {
         width: 20%;
     }
     body {

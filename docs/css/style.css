@@ -90,17 +90,17 @@ main.site-content {
   background: #f7f1ee;
   color: #120807; }
 
-hr.common-hr {
+div.common-hr {
   width: 10%;
   margin: 2.5em;
-  border: 3px solid #8B0000;
+  height: 3px;
   border-radius: 0.5rem;
   margin: 2.5em auto;
   outline: none;
-  color: #8B0000; }
+  background: #8B0000; }
 
 @media only screen and (max-width: 700px) {
-  hr.common-hr {
+  .common-hr {
     width: 20%; }
   body {
     padding-top: 0; } }
@@ -586,8 +586,12 @@ input[type="submit"] {
             animation-duration: 1s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
+    .nav ul > li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; }
     .nav ul a {
-      display: block;
       height: 100%;
       padding: 1.7rem;
       color: #f7f1ee;
@@ -653,15 +657,8 @@ input[type="submit"] {
     .nav ul li {
       text-align: center;
       width: 100vw;
-      border-bottom: 0.5px dotted #e3b9b5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden; }
+      border-bottom: 0.5px dotted #e3b9b5; }
       .nav ul li a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         outline: none;
         padding: 1rem;
@@ -704,15 +701,8 @@ input[type="submit"] {
       header .nav ul li {
         text-align: center;
         width: 100vw;
-        border-bottom: 0.5px dotted #e3b9b5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden; }
+        border-bottom: 0.5px dotted #e3b9b5; }
         header .nav ul li a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
           width: 100%;
           outline: none;
           padding: 1rem;
@@ -725,13 +715,13 @@ input[type="submit"] {
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
   body {
     font: inherit; }
-  #menu li {
-    overflow: hidden; }
-    #menu li a {
-      padding: 1.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
+  .nav ul li {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .nav ul li a {
+      padding: 1.5rem; } }
 
 .site-footer {
   display: flex;

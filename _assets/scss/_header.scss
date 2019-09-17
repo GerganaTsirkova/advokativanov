@@ -79,8 +79,13 @@
         animation-name: fadeInLeft;
         animation-duration: 1s;
         animation-fill-mode: forwards;
+        >li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
         a {
-            display: block;
             height: 100%;
             padding: 1.7rem;
             color: $font-color-light;
@@ -170,14 +175,7 @@
                 text-align: center;
                 width: 100vw;
                 border-bottom: 0.5px dotted $font-color-dark;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                overflow: hidden;
                 a {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     width: 100%;
                     outline: none;
                     padding: 1rem;
@@ -229,54 +227,43 @@
                 }
             }
         }
-        .nav {
-            ul {
-                flex-direction: column;
-                background-color: $frame-color-light-transperant;
-                border-bottom: 1px dotted $font-color-dark;
-                li {
-                    text-align: center;
-                    width: 100vw;
-                    border-bottom: 0.5px dotted $font-color-dark;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    overflow: hidden;
-                    a {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
-                        outline: none;
-                        padding: 1rem;
-                        color: $font-color-light;
-                        &:hover,
-                        &:focus {
-                            background: $items-color-transperant;
-                        }
-                    }
-                    a.selected {
+        .nav ul {
+            flex-direction: column;
+            background-color: $frame-color-light-transperant;
+            border-bottom: 1px dotted $font-color-dark;
+            li {
+                text-align: center;
+                width: 100vw;
+                border-bottom: 0.5px dotted $font-color-dark;
+                a {
+                    width: 100%;
+                    outline: none;
+                    padding: 1rem;
+                    color: $font-color-light;
+                    &:hover,
+                    &:focus {
                         background: $items-color-transperant;
                     }
+                }
+                a.selected {
+                    background: $items-color-transperant;
                 }
             }
         }
     }
 }
 
-@media only screen and (min-width:$phones-l) and (max-width:$tablets-m) {
+@media only screen and(min-width:$phones-l) and(max-width:$tablets-m) {
     body {
         font: inherit;
     }
-    #menu {
-        li {
-            overflow: hidden;
-            a {
-                padding: 1.5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+    .nav ul li {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            padding: 1.5rem;
         }
     }
 }
