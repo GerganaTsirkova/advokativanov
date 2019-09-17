@@ -950,7 +950,8 @@ input,
   width: 100%;
   background: #f7f1ee;
   padding: 3rem;
-  overflow: hidden; }
+  overflow: hidden;
+  box-sizing: border-box; }
 
 .contacts-container .contacts ul {
   list-style-type: none;
