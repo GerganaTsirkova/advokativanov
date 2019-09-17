@@ -18,16 +18,33 @@ input[type="submit"] {
 }
 
 .article-button {
-    width: 20%;
+    width: 100%;
     background: $items-color;
     padding: 0.5rem 1rem;
     margin: 2em auto 0 auto;
     box-shadow: 0 0 0.5rem 0 rgba(black, 0.5);
-    @media screen and(max-width: 600px) {
-        width: 100%;
+    @media screen and(min-width: 600px) {
+        width: 20%;
     }
     &:hover,
     &:focus {
         background: $red;
+    }
+}
+
+.button-blog a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0.5rem 0 rgba(black, 0.5);
+    background: $items-color;
+    padding: 0.5rem 1rem;
+    &:hover,
+    &:focus {
+        background: $red;
+    }
+    @media only screen and (min-width:$phones-l) {
+        width: 20%;
     }
 }
