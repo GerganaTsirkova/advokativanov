@@ -20,15 +20,15 @@
     },
     "homepage": "https://github.com/GerganaTsirkova/advokativanov#readme",
     "devDependencies": {
-        "axios": ">=0.18.1",
+        "axios": "^0.20.0",
         "browser-sync": "^2.26.12",
         "child_process": "^1.0.2",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^6.1.0",
         "gulp-exec": "^3.0.2",
-        "gulp-sass": "^4.0.2",
+        "gulp-sass": "^4.1.0",
         "lodash": "^4.17.20",
         "node-sass": "^4.14.1",
-        "tar": ">=4.4.2"
+        "tar": "^6.0.5"
     }
 }
