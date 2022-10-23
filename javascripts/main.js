@@ -29,9 +29,9 @@ function startpage() {
         }
     });
     //highlight the li on the menu
-    $(document).ready(function() {
-        $("#<?=$current_page?>").addClass("active");
-    });
+    // $(document).ready(function() {
+    //     $("#<?=$current_page?>").addClass("active");
+    // });
 }
 
 function topFunction() {

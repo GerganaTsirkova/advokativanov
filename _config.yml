@@ -1,16 +1,16 @@
 title: Адвокат Светломир Иванов гр.Русе
-email: g_cirkova@mail.bg
-description: Website of lawyer Svetlomir Ivanov!
 destination: docs
-# baseurl: "/lawyer-s-website"
+description: "Адвокат Светломир Иванов предлага правни консултации, изготвяне на становища, представителство пред съд и други държавни институции"
 # baseurl: ""
 url: "https://advokativanov.eu"
 # url: ""
-twitter_username: GerganaTsirkova
-github_username: GerganaTsirkova
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md,docs,LICENCE.txt, LICENCE-images.txt]
 # Build settings
+sass:
+  sass_dir: assets/css
+  style: compressed
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag

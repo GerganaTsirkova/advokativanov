@@ -1,5 +1,5 @@
 ---
-layout: page-unmain
+layout: page
 permalink: /privacy-policy/
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: page-unmain
+layout: page
 title: Services
 permalink: /services/
 ---

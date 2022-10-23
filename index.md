@@ -2,4 +2,4 @@
 layout: page
 ---
 
-{% include first-page.html %}
+{% include homepage-content.html %}
