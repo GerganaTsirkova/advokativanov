@@ -236,6 +236,11 @@ section>.container {
 /* 4. Component Redesign */
 
 /* --- Fancy Button --- */
+
+.btn {
+  transform-origin: none !important;
+}
+
 .btn-primary {
   all: unset;
   display: inline-block;
