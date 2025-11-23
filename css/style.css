@@ -1501,6 +1501,11 @@ footer.bg-dark a {
   max-height: fit-content !important;
 }
 
+.cookie-banner .btn.btn-outline-secondary.btn-sm,
+.cookie-banner .btn.btn-primary.btn-sm {
+  max-height: fit-content !important;
+}
+
 
 /* Responsive Contact Section */
 @media (max-width: 991px) {
