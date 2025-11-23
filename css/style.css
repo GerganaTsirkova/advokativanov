@@ -97,7 +97,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
 }
 
 #preloader.hidden {
@@ -166,7 +166,7 @@ h6 {
 a {
   color: #ce5aff;
   text-decoration: none;
-  transition: color 0.3s ease-out;
+  transition: color 0.15s ease-out;
   letter-spacing: 0.1px;
 }
 
@@ -187,7 +187,7 @@ a:hover {
   max-width: 100%;
 }
 
-.row > * {
+.row>* {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   padding-right: calc(var(--bs-gutter-x) * 0.5);
 }
@@ -217,8 +217,8 @@ footer {
 }
 
 /* Remove vertical scroll inside inner sections/components; allow only page-level scrolling */
-section > .contact-section,
-section > .container {
+section>.contact-section,
+section>.container {
   min-height: fit-content;
   overflow-y: hidden !important;
   overflow-x: hidden;
@@ -240,6 +240,7 @@ section > .container {
   all: unset;
   display: inline-block;
   padding: 14px 35px;
+  margin: 1em 0;
   font-size: 1rem;
   font-weight: 600;
   color: #ffffff;
@@ -249,15 +250,8 @@ section > .container {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
   text-align: center;
   letter-spacing: 0.1px;
-}
-
-.btn-primary:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(147, 51, 234, 0.6);
-  animation: gradient-shift 3s ease-out infinite;
 }
 
 .btn-lg {
@@ -271,6 +265,7 @@ section > .container {
   all: unset;
   display: inline-block;
   padding: 14px 35px;
+  margin: 1em 0;
   font-size: 1rem;
   font-weight: 600;
   color: #1a1850;
@@ -282,19 +277,9 @@ section > .container {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.3s ease-out;
   text-align: center;
   letter-spacing: 0.1px;
   box-sizing: border-box;
-}
-
-.btn-secondary:hover,
-.btn-outline-light:hover {
-  background: rgba(255, 255, 255, 1);
-  border-color: rgba(255, 255, 255, 1);
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.5);
-  color: #1a1850;
 }
 
 .btn-secondary svg,
@@ -336,6 +321,7 @@ section > .container {
   text-align: center;
   letter-spacing: 0.2px;
   white-space: nowrap;
+  margin-top: 1em;
 }
 
 /* Tablet & desktop: keep natural width, center group */
@@ -356,11 +342,7 @@ section > .container {
   background: var(--gradient-primary);
   color: #fff;
   max-height: fit-content !important;
-}
-
-.btn-primary.action-button:hover {
-  box-shadow: 0 15px 35px rgba(147, 51, 234, 0.6);
-  transform: translateY(-4px);
+  margin-top: 1em;
 }
 
 .btn-outline-secondary.action-button,
@@ -368,14 +350,7 @@ section > .container {
   background: rgba(255, 255, 255, 0.95);
   color: #1a1850;
   border: 2px solid #ffffff;
-}
-
-.btn-outline-secondary.action-button:hover,
-.btn-outline-light.action-button:hover {
-  background: #ffffff;
-  color: #1a1850;
-  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.5);
-  transform: translateY(-4px);
+  margin-top: 1em;
 }
 
 /* Mobile adjustments */
@@ -397,7 +372,7 @@ section > .container {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 1rem 0;
-  transition: background-color 0.3s ease-out;
+  transition: background-color 0.15s ease-out;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -420,7 +395,7 @@ section > .container {
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  transition: transform 0.3s ease-out;
+  transition: transform 0.15s ease-out;
 }
 
 /* Change to X icon when navbar is expanded */
@@ -431,7 +406,7 @@ section > .container {
 
 .nav-link {
   font-weight: 600;
-  transition: color 0.3s ease-out;
+  transition: color 0.15s ease-out;
   color: var(--text-muted-dark);
   font-size: 1.125rem;
   /* Increased from default */
@@ -475,8 +450,11 @@ section > .container {
   text-decoration: underline;
 }
 
-.cookie-banner .btn {
+.cookie-banner #cookie-decline,
+.cookie-banner #cookie-accept {
   font-size: 16px;
+  transition: none !important;
+  animation: none !important;
 }
 
 .cookie-banner .btn.btn-outline-secondary.btn-sm {
@@ -487,15 +465,20 @@ section > .container {
 
 .cookie-banner .btn.btn-outline-secondary.btn-sm:hover {
   background: #f5f5f5;
+  transform: none !important;
 }
 
 .cookie-banner .btn.btn-primary.btn-sm {
   background: var(--gradient-primary);
   border: none;
+  transition: none !important;
+  animation: none !important;
 }
 
 .cookie-banner .btn.btn-primary.btn-sm:hover {
   box-shadow: 0 8px 20px rgba(147, 51, 234, 0.5);
+  animation: none !important;
+  transform: none !important;
 }
 
 @media (max-width: 575px) {
@@ -514,7 +497,7 @@ section > .container {
   background: linear-gradient(rgba(15, 14, 46, 0.7), rgba(15, 14, 46, 0.7)), url('../images/hero-background.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
-  animation: gradient-shift 15s ease-out infinite;
+  animation: gradient-shift 8s ease-out infinite;
 }
 
 .hero-section .lead {
@@ -714,7 +697,7 @@ section > .container {
   background-color: var(--dark-surface);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
-  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -746,7 +729,7 @@ section > .container {
 
 .card-img-top {
   opacity: 0.8;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.15s ease;
   width: 100%;
   height: 220px !important;
   object-fit: cover;
@@ -772,7 +755,7 @@ section > .container {
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(15, 14, 46, 0.6), rgba(15, 14, 46, 0.6));
-  transition: background 0.3s ease-out;
+  transition: background 0.15s ease-out;
   pointer-events: none;
 }
 
@@ -878,19 +861,11 @@ section > .container {
   -webkit-backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 1);
   border-radius: 50px;
-  transition: all 0.3s ease-out;
+  transition: all 0.15s ease-out;
   letter-spacing: 0.1px;
   cursor: pointer;
   text-align: center;
   box-sizing: border-box;
-}
-
-.btn-outline-secondary:hover {
-  background: rgba(255, 255, 255, 1);
-  border-color: rgba(255, 255, 255, 1);
-  color: #1a1850;
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.5);
 }
 
 .btn-outline-secondary:focus {
@@ -1211,7 +1186,7 @@ footer.bg-dark a {
   background: radial-gradient(circle at 20% 50%, rgba(147, 51, 234, 0.15) 0%, transparent 50%),
     radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.15) 0%, transparent 50%);
   pointer-events: none;
-  animation: contact-glow 8s ease-in-out infinite alternate;
+  animation: contact-glow 4s ease-in-out infinite alternate;
 }
 
 @keyframes contact-glow {
@@ -1235,7 +1210,7 @@ footer.bg-dark a {
   border-radius: 24px;
   padding: 2.5rem 2rem;
   text-align: center;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
   overflow: hidden;
   height: 100%;
@@ -1254,7 +1229,7 @@ footer.bg-dark a {
   bottom: 0;
   background: linear-gradient(135deg, rgba(147, 51, 234, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.2s ease;
 }
 
 .contact-card:hover {
@@ -1278,7 +1253,7 @@ footer.bg-dark a {
   align-items: center;
   justify-content: center;
   position: relative;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
   box-shadow: 0 8px 24px rgba(147, 51, 234, 0.3);
 }
 
@@ -1317,7 +1292,7 @@ footer.bg-dark a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: all 0.15s ease;
   position: relative;
   display: inline-block;
 }
@@ -1330,7 +1305,7 @@ footer.bg-dark a {
   width: 0;
   height: 2px;
   background: linear-gradient(90deg, #9333ea 0%, #3b82f6 100%);
-  transition: width 0.3s ease;
+  transition: width 0.15s ease;
 }
 
 .contact-link:hover {
@@ -1362,7 +1337,7 @@ footer.bg-dark a {
   width: 200%;
   height: 200%;
   background: radial-gradient(circle, rgba(147, 51, 234, 0.08) 0%, transparent 70%);
-  animation: form-pulse 6s ease-in-out infinite;
+  animation: form-pulse 3s ease-in-out infinite;
 }
 
 @keyframes form-pulse {
@@ -1393,7 +1368,7 @@ footer.bg-dark a {
   color: var(--text-light) !important;
   padding: 1rem 1.5rem;
   border-radius: 16px;
-  transition: all 0.3s ease;
+  transition: all 0.15s ease;
   font-size: 1.0625rem;
   position: relative;
   z-index: 1;
@@ -1427,7 +1402,7 @@ footer.bg-dark a {
 }
 
 .contact-submit-btn svg {
-  transition: transform 0.3s ease;
+  transition: transform 0.15s ease;
 }
 
 .contact-submit-btn:hover svg {
@@ -1442,7 +1417,7 @@ footer.bg-dark a {
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
+  transition: left 0.25s ease;
 }
 
 .contact-submit-btn:hover::before {
@@ -1467,8 +1442,8 @@ footer.bg-dark a {
   justify-content: center;
   cursor: pointer;
   z-index: 1400;
-  animation: indicator-bounce 1.4s ease-in-out infinite;
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  animation: indicator-bounce 0.7s ease-in-out infinite;
+  transition: opacity 0.2s ease, transform 0.2s ease;
   color: #ffffff;
 }
 
@@ -1481,8 +1456,15 @@ footer.bg-dark a {
 }
 
 @keyframes indicator-bounce {
-  0%, 100% { transform: translate(-50%, 0); }
-  50% { transform: translate(-50%, -14px); }
+
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, -14px);
+  }
 }
 
 .scroll-indicator.hide {
@@ -1493,10 +1475,12 @@ footer.bg-dark a {
 
 @media (max-width: 575px) {
   .scroll-indicator {
-    bottom: 70px; /* keep above call button & cookie banner */
+    bottom: 70px;
+    /* keep above call button & cookie banner */
     width: 48px;
     height: 48px;
   }
+
   .scroll-indicator svg {
     width: 22px;
     height: 22px;

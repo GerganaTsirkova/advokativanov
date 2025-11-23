@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
   if (preloader) {
     setTimeout(() => {
       preloader.classList.add('hidden');
-    }, 500);
+    }, 1000);
   }
 });
 
