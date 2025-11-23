@@ -6,7 +6,7 @@
 
   <!-- Main page -->
   <url>
-    <loc>https://advokativanov.bg/</loc>
+    <loc>https://advokativanov.eu/</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,14 +14,14 @@
 
   <!-- Legal pages -->
   <url>
-    <loc>https://advokativanov.bg/privacy.html</loc>
+    <loc>https://advokativanov.eu/privacy.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://advokativanov.bg/terms.html</loc>
+    <loc>https://advokativanov.eu/terms.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
@@ -29,84 +29,84 @@
 
   <!-- Service pages -->
   <url>
-    <loc>https://advokativanov.bg/grajdansko-pravo.html</loc>
+    <loc>https://advokativanov.eu/grajdansko-pravo.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://advokativanov.bg/nakazatelno-pravo.html</loc>
+    <loc>https://advokativanov.eu/nakazatelno-pravo.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://advokativanov.bg/trudovo-pravo.html</loc>
+    <loc>https://advokativanov.eu/trudovo-pravo.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://advokativanov.bg/semeyno-pravo.html</loc>
+    <loc>https://advokativanov.eu/semeyno-pravo.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://advokativanov.bg/administrativno-pravo.html</loc>
+    <loc>https://advokativanov.eu/administrativno-pravo.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://advokativanov.bg/targovsko-pravo.html</loc>
+    <loc>https://advokativanov.eu/targovsko-pravo.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://advokativanov.bg/danachno-pravo.html</loc>
+    <loc>https://advokativanov.eu/danachno-pravo.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://advokativanov.bg/mejdunarodno-pravo.html</loc>
+    <loc>https://advokativanov.eu/mejdunarodno-pravo.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://advokativanov.bg/service-property-law.html</loc>
+    <loc>https://advokativanov.eu/service-property-law.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://advokativanov.bg/veshtno-pravo.html</loc>
+    <loc>https://advokativanov.eu/veshtno-pravo.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://advokativanov.bg/finansovo-pravo.html</loc>
+    <loc>https://advokativanov.eu/finansovo-pravo.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://advokativanov.bg/zastrahovatelno-pravo.html</loc>
+    <loc>https://advokativanov.eu/zastrahovatelno-pravo.html</loc>
     <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

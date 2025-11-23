@@ -1,4 +1,4 @@
-# advokativanov.bg
+# advokativanov.eu
 
 Static website for "Адвокат Светломир Иванов" (Русе, България).
 
@@ -21,7 +21,7 @@ sitemap.xml                # URL index for search engines
 manifest.webmanifest       # Progressive enhancement / PWA metadata
 security.txt               # Security contact disclosure
 humans.txt                 # Human attribution file
-CNAME                      # Custom domain mapping (advokativanov.bg)
+CNAME                      # Custom domain mapping (advokativanov.eu)
 css/style.css              # All custom design & overrides
 js/main.js                 # AOS init, cookie consent, navbar collapse, scroll indicator
 favicon.svg                # Primary site icon
@@ -32,7 +32,7 @@ service pages (multiple *.html)
 ## Deployment (GitHub Pages + Custom Domain)
 1. Push repository to GitHub (`GerganaTsirkova/advokativanov`).
 2. In repo settings -> Pages: Source = `main` branch, root (`/`), Save.
-3. Ensure `CNAME` file contains: `advokativanov.bg` (already present).
+3. Ensure `CNAME` file contains: `advokativanov.eu` (already present).
 4. DNS provider: create `CNAME` record `www` -> `GerganaTsirkova.github.io`; for apex domain use A records -> GitHub Pages IPs:
    - 185.199.108.153
    - 185.199.109.153
@@ -40,8 +40,8 @@ service pages (multiple *.html)
    - 185.199.111.153
 5. Wait for DNS propagation; verify via:
    ```bash
-   nslookup advokativanov.bg
-   nslookup www.advokativanov.bg
+   nslookup advokativanov.eu
+   nslookup www.advokativanov.eu
    ```
 6. After Pages build, confirm HTTPS is enabled (enforce HTTPS toggle in Pages settings).
 

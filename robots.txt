@@ -7,7 +7,7 @@ Allow: /js/
 Allow: /images/
 
 # Sitemap location
-Sitemap: https://advokativanov.bg/sitemap.xml
+Sitemap: https://advokativanov.eu/sitemap.xml
 
 # No sensitive backend paths (static site) -> nothing to disallow
 # Explicitly disallow common temp or junk if added later

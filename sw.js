@@ -1,4 +1,4 @@
-/* Service Worker for advokativanov.bg */
+/* Service Worker for advokativanov.eu */
 const CACHE_VERSION = 'v1';
 const CORE_CACHE = `core-${CACHE_VERSION}`;
 const CORE_ASSETS = [

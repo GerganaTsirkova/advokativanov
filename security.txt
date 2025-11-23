@@ -1,8 +1,8 @@
-# security.txt for advokativanov.bg
+# security.txt for advokativanov.eu
 
 Contact: mailto:swet_m@abv.bg
 Expires: 2026-11-23T00:00:00.000Z
-Policy: https://advokativanov.bg/privacy.html
-Hiring: https://advokativanov.bg/
+Policy: https://advokativanov.eu/privacy.html
+Hiring: https://advokativanov.eu/
 Preferred-Languages: bg, en
-Canonical: https://advokativanov.bg/security.txt
+Canonical: https://advokativanov.eu/security.txt

@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       s.defer = true;
       s.id = 'analytics-script';
       // Placeholder: Plausible
-      s.setAttribute('data-domain', 'advokativanov.bg');
+      s.setAttribute('data-domain', 'advokativanov.eu');
       s.src = 'https://plausible.io/js/script.js';
       document.head.appendChild(s);
     };
