@@ -1,0 +1,14 @@
+/* TEAM */
+Developer: Светломир Иванов (Legal content oversight)
+Designer: UI/UX Enhancements by Collaborative AI Assistant
+Contact: swet_m@abv.bg
+Location: Русе, България
+
+/* SITE */
+Standards: HTML5, CSS3, ES2020, Bootstrap 5.3.3
+Components: AOS (Scroll animations)
+Last-Update: 2025-11-23
+Language: bg
+
+/* THANKS */
+Thanks to open-source contributors and web standards bodies.

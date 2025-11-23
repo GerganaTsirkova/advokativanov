@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Ensure CSS/JS are crawlable for proper rendering
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Sitemap location
+Sitemap: https://advokativanov.bg/sitemap.xml
+
+# No sensitive backend paths (static site) -> nothing to disallow
+# Explicitly disallow common temp or junk if added later
+Disallow: /temp/
+Disallow: /drafts/
+
+# Performance hint (most crawlers ignore crawl-delay nowadays)
+# Crawl-delay: 0
+
+# HTML pages explicitly allowed
+Allow: /*.html
