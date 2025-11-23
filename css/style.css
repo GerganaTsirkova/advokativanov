@@ -216,6 +216,14 @@ footer {
   overflow-x: hidden;
 }
 
+/* Remove vertical scroll inside inner sections/components; allow only page-level scrolling */
+section > .contact-section,
+section > .container {
+  min-height: fit-content;
+  overflow-y: hidden !important;
+  overflow-x: hidden;
+}
+
 /* Gradient Text Utility */
 .text-gradient {
   background: var(--gradient-text);
@@ -452,7 +460,7 @@ footer {
   -webkit-backdrop-filter: blur(10px);
   color: #ffffff;
   z-index: 1100;
-  padding: 12px 0;
+  padding: 20px 0;
   font-size: 14px;
   box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.3);
   display: none;
