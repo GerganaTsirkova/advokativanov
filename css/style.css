@@ -332,6 +332,7 @@ section>.container {
 .cookie-banner .btn-outline-secondary,.cookie-banner .btn-outline-primary{
   margin: 1em 0;
   max-height: fit-content !important;
+  height: 55px;
 }
 
 /* Tablet & desktop: keep natural width, center group */
