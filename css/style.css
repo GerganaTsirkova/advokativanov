@@ -50,8 +50,17 @@
 }
 
 /* 3. Global Styles & Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -59,6 +68,8 @@ body {
   /* Offset for fixed navbar */
   overflow-x: hidden;
   /* Prevent horizontal scroll from animations */
+  width: 100%;
+  max-width: 100%;
   background-color: var(--dark-bg);
   color: var(--text-light);
   font-family: var(--font-primary);
@@ -156,6 +167,48 @@ a {
 
 a:hover {
   color: #6298ff;
+}
+
+/* Prevent overflow from containers and rows */
+.container,
+.container-fluid {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+.row > * {
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+}
+
+/* Ensure all images and media stay within bounds */
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Ensure sections don't overflow */
+section,
+main,
+header,
+footer {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Gradient Text Utility */
@@ -682,15 +735,23 @@ a:hover {
   opacity: 0.8;
   transition: opacity 0.3s ease;
   width: 100%;
-  height: 220px;
+  height: 220px !important;
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+/* Wrapper for card images to allow overlay */
+.card picture {
   position: relative;
+  display: block;
+  width: 100%;
+  height: 220px !important;
+  overflow: hidden;
 }
 
 /* Add overlay to all card images */
-.card-img-top::after {
+.card picture::after {
   content: '';
   position: absolute;
   top: 0;
@@ -706,7 +767,7 @@ a:hover {
   opacity: 1;
 }
 
-.card:hover .card-img-top::after {
+.card:hover picture::after {
   background: linear-gradient(rgba(15, 14, 46, 0.3), rgba(15, 14, 46, 0.3));
 }
 
@@ -731,12 +792,15 @@ a:hover {
 /* Fix image dimensions so all images are same size and crop consistently */
 #services .card-img-top {
   width: 100%;
-  height: 220px;
+  height: 220px !important;
   /* choose desired uniform height */
   object-fit: cover;
   object-position: center;
   display: block;
-  position: relative;
+}
+
+#services .card picture {
+  height: 220px !important;
 }
 
 /* Button inside card should look like a button */
