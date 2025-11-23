@@ -329,6 +329,11 @@ section>.container {
   margin-top: 1em;
 }
 
+.cookie-banner .btn-outline-secondary,.cookie-banner .btn-outline-primary{
+  margin: 1em 0;
+  max-height: fit-content !important;
+}
+
 /* Tablet & desktop: keep natural width, center group */
 @media (min-width: 576px) {
   .action-buttons-group {
