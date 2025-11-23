@@ -77,24 +77,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Scroll indicator (service pages + index hero)
-  const hasHero = document.querySelector('#home.hero-section') !== null;
   const isServicePage = document.querySelector('.page-hero') !== null;
-  let scrollIndicator = document.getElementById('scroll-indicator');
-  // Auto-create indicator on index page if missing
-  if (hasHero && !isServicePage && !scrollIndicator) {
-    scrollIndicator = document.createElement('button');
-    scrollIndicator.id = 'scroll-indicator';
-    scrollIndicator.className = 'scroll-indicator';
-    scrollIndicator.setAttribute('aria-label','Скролирайте надолу за още съдържание');
-    scrollIndicator.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14" stroke-linecap="round" stroke-linejoin="round" /><path d="M5 12l7 7 7-7" stroke-linecap="round" stroke-linejoin="round" /></svg>';
-    document.body.appendChild(scrollIndicator);
-  }
-  if ((isServicePage || hasHero) && scrollIndicator) {
-    // Always start visible on index page; remove any previous hidden classes
-    if (hasHero && !isServicePage) {
-      scrollIndicator.classList.remove('hide');
-      scrollIndicator.classList.remove('forceHide');
-    }
+  const scrollIndicator = document.getElementById('scroll-indicator');
+  // Only enable scroll indicator logic on service pages where element exists
+  if (isServicePage && scrollIndicator) {
     // Utility: determine if page has scrollable overflow
     const canScroll = () => {
       // subtract small epsilon (1px) to avoid false positives due to rounding
@@ -103,18 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update visibility based on scrollability
     const updateIndicatorScrollability = () => {
-      // On index page always keep visible if scroll possible
-      if (hasHero && !isServicePage) {
-        if (canScroll()) {
-          scrollIndicator.classList.remove('hide');
-          scrollIndicator.classList.remove('forceHide');
-        } else {
-          // If no scroll possible hide gracefully
-          scrollIndicator.classList.add('hide');
-        }
-        return;
-      }
-      // Service pages original behaviour
       if (!canScroll()) {
         scrollIndicator.classList.add('hide');
       } else if (!scrollIndicator.classList.contains('forceHide')) {
@@ -128,25 +102,26 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', updateIndicatorScrollability);
     window.addEventListener('orientationchange', updateIndicatorScrollability);
 
-    // Target to hide near end: try footer fallback
+    // Hide when footer enters viewport
     const lastContentTarget = document.querySelector('footer');
     if (lastContentTarget) {
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             scrollIndicator.classList.add('hide');
+            scrollIndicator.classList.add('forceHide');
           }
         });
       }, { threshold: 0.2 });
       observer.observe(lastContentTarget);
     }
 
-    // Fallback hide near bottom (service pages only); index never force-hides
+    // Additional near-bottom hide
     const hideIfNearBottom = () => {
       if (!scrollIndicator.isConnected) return;
       const scrolled = window.scrollY + window.innerHeight;
       const total = document.documentElement.scrollHeight;
-      if (isServicePage && scrolled / total > 0.88) {
+      if (scrolled / total > 0.88) {
         scrollIndicator.classList.add('hide');
         scrollIndicator.classList.add('forceHide');
       }
@@ -166,19 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     window.addEventListener('scroll', showIfNotBottom, { passive: true });
 
-    // Click behavior:
-    // Service detail pages: scroll to next h3 or advance
-    // Index page: scroll to services section
+    // Click behavior: scroll to next h3 or page advance
     scrollIndicator.addEventListener('click', () => {
-      if (hasHero && !isServicePage) {
-        const servicesSection = document.getElementById('services');
-        if (servicesSection) {
-          servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          // After scroll, reassess if we still have scroll space
-          setTimeout(updateIndicatorScrollability, 400);
-          return;
-        }
-      }
       const headings = Array.from(document.querySelectorAll('main h3'));
       const next = headings.find(h => h.getBoundingClientRect().top > 80);
       if (next) {
