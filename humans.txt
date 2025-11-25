@@ -1,6 +1,6 @@
 /* TEAM */
 Developer: Светломир Иванов (Legal content oversight)
-Designer: UI/UX Enhancements by Collaborative AI Assistant
+Designer: Гергана Циркова
 Contact: swet_m@abv.bg
 Location: Русе, България
 
